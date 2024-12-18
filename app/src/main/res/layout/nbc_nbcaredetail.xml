@@ -1,0 +1,2428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cmdBack"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@color/pageHeadingBack"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lblHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="Delivery Care Details"
+                android:textColor="@color/pageHeading" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/secNBID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblNBID"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblNBID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Birth Internal ID" />
+
+                <EditText
+                    android:id="@+id/txtNBID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineNBID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secMemID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblMemID"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMemID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Member ID" />
+
+                <EditText
+                    android:id="@+id/txtMemID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMemID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secHHID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblHHID"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblHHID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Household ID" />
+
+                <EditText
+                    android:id="@+id/txtHHID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineHHID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secPGN"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblPGN"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblPGN"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="PGN" />
+
+                <EditText
+                    android:id="@+id/txtPGN"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linePGN"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secChSl"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblChSl"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblChSl"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Child Sl" />
+
+                <EditText
+                    android:id="@+id/txtChSl"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineChSl"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secPregType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblPregType"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.6" />
+
+                <TextView
+                    android:id="@+id/VlblPregType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the outcome of the pregnancy." />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpPregType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoPregType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Live birth" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPregType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Spontaneous miscarriage" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPregType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Stillbirth" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPregType4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Induced abortion (No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPregType5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Induced abortion (Medically terminated)" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPregType6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPregType7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linePregType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secOutcomeDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblOutcomeDate"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.7" />
+
+                <TextView
+                    android:id="@+id/VlblOutcomeDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the date of the outcome?" />
+
+                <EditText
+                    android:id="@+id/dtpOutcomeDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineOutcomeDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secOutcomeDateDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblOutcomeDateDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblOutcomeDateDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the date of the outcome? - Don't know/refused" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpOutcomeDateDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoOutcomeDateDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoOutcomeDateDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineOutcomeDateDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secOutcomeTime"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblOutcomeTime"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.8" />
+
+                <TextView
+                    android:id="@+id/VlblOutcomeTime"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the time of the outcome? (WRITE DOWN RESPONSE ON THE BLANK; FILL IN AS COMPLETE AS POSSIBLE)" />
+
+                <EditText
+                    android:id="@+id/txtOutcomeTime"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/clocksmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineOutcomeTime"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secOutcomeType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblOutcomeType"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblOutcomeType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Outcome Time Type" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpOutcomeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoOutcomeType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Exact" />
+
+                    <RadioButton
+                        android:id="@+id/rdoOutcomeType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Approximate" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineOutcomeType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secOutcomeTimeDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblOutcomeTimeDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblOutcomeTimeDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Outcome Time Don't know/refused" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpOutcomeTimeDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoOutcomeTimeDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoOutcomeTimeDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineOutcomeTimeDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secCryMoveBreathe"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblCryMoveBreathe"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.9" />
+
+                <TextView
+                    android:id="@+id/VlblCryMoveBreathe"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Did the baby cry, move, or breathe immediately upon birth? (CIRCLE ONE RESPONSE)" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpCryMoveBreathe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoCryMoveBreathe1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoCryMoveBreathe2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoCryMoveBreathe3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoCryMoveBreathe4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineCryMoveBreathe"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secChildName"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblChildName"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.10" />
+
+                <TextView
+                    android:id="@+id/VlblChildName"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Record babys name" />
+
+                <EditText
+                    android:id="@+id/txtChildName"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineChildName"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secChildNameDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblChildNameDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblChildNameDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know/Refused" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpChildNameDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoChildNameDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoChildNameDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineChildNameDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secChildID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblChildID"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.11" />
+
+                <TextView
+                    android:id="@+id/VlblChildID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Record baby/[name]s individual ID number" />
+
+                <EditText
+                    android:id="@+id/txtChildID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineChildID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secChildSex"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblChildSex"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.12" />
+
+                <TextView
+                    android:id="@+id/VlblChildSex"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is the sex of baby/[NAME]?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpChildSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoChildSex1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rdoChildSex2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/rdoChildSex3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Indeterminant" />
+
+                    <RadioButton
+                        android:id="@+id/rdoChildSex4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Transgender" />
+
+                    <RadioButton
+                        android:id="@+id/rdoChildSex5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineChildSex"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secBirthTiming"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBirthTiming"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.13" />
+
+                <TextView
+                    android:id="@+id/VlblBirthTiming"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Was baby/[name] born early, on time, or later than expected? (PRE-TERM IS DEFINED AS LESS THAN 37 WEEKS)" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpBirthTiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoBirthTiming1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Early (pre-term)" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBirthTiming2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="On time (term)" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBirthTiming3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Late (post-term)" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBirthTiming4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBirthTiming5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineBirthTiming"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secPregWeek"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblPregWeek"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.14" />
+
+                <TextView
+                    android:id="@+id/VlblPregWeek"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="How many weeks pregnant were you when you delivered baby/[name]? (WRITE DOWN THE NUMBER IN THE BLANK)" />
+
+                <EditText
+                    android:id="@+id/txtPregWeek"
+                    style="@style/customEdit"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linePregWeek"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secPregWeekDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblPregWeekDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B11." />
+
+                <TextView
+                    android:id="@+id/VlblPregWeekDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know/Refused" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpPregWeekDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoPregWeekDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPregWeekDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linePregWeekDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secExpDOB"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblExpDOB"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.15" />
+
+                <TextView
+                    android:id="@+id/VlblExpDOB"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the expected date of birth of the baby/[name]?" />
+
+                <EditText
+                    android:id="@+id/dtpExpDOB"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineExpDOB"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secExpDOBDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblExpDOBDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblExpDOBDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know/Refused" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpExpDOBDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoExpDOBDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoExpDOBDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineExpDOBDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secChildDOB"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblChildDOB"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.16" />
+
+                <TextView
+                    android:id="@+id/VlblChildDOB"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the date of birth of the baby/[name]?" />
+
+                <EditText
+                    android:id="@+id/dtpChildDOB"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineChildDOB"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secChildDOBDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblChildDOBDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblChildDOBDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know/refused" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpChildDOBDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoChildDOBDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoChildDOBDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineChildDOBDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secBPlace"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBPlace"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.17" />
+
+                <TextView
+                    android:id="@+id/VlblBPlace"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Where was baby/[name] born?" />
+
+                <Spinner
+                    android:id="@+id/spnBPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineBPlace"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secBPlaceOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBPlaceOth"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblBPlaceOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtBPlaceOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineBPlaceOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secFaciName"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblFaciName"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.18" />
+
+                <TextView
+                    android:id="@+id/VlblFaciName"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the name of health facility where baby/[name] was born?" />
+
+                <EditText
+                    android:id="@+id/txtFaciName"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="500" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineFaciName"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secFaciNameDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblFaciNameDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblFaciNameDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know/refused" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpFaciNameDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoFaciNameDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoFaciNameDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respon" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineFaciNameDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/seclbl04"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl04"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.19"
+                    android:textColor="@color/form_heading_font_color" />
+
+                <TextView
+                    android:id="@+id/lblHlbl04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Who assisted with the delivery of baby/[name]? PROBE TO IDENTIFY THE TYPE OF SOURCE (CIRCLE ALL THAT APPLY)l
+"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl04"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndDoc"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndDoc"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="A" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndDoc"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Doctor" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndDoc"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndDoc"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndNurse"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndNurse"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndNurse"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Nurse" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndNurse"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndNurse"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndMidwife"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndMidwife"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="C" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndMidwife"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Midwife/Paramedic" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndMidwife"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndMidwife"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndTBA"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndTBA"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="D" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndTBA"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Traditional birth attendant(TBA)" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndTBA"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndTBA"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndCHW"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndCHW"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="E" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndCHW"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Community health worker/officers" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndCHW"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndCHW"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndRel"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndRel"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndRel"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Relative/friend" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndRel"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndRel"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndNon"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndNon"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="G" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndNon"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="No attendant" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndNon"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndNon"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndOth"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="X" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndOth"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndOthSp"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndOthSp"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndOthSp"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtDelAtndOthSp"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndOthSp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndDK"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndDK"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="Y" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndDK"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndDK"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndDK"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelAtndRef"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelAtndRef"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="Z" />
+
+                <TextView
+                    android:id="@+id/VlblDelAtndRef"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Refused to respond" />
+
+                <CheckBox
+                    android:id="@+id/chkDelAtndRef"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelAtndRef"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secBabySize"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBabySize"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.20" />
+
+                <TextView
+                    android:id="@+id/VlblBabySize"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="When baby/[name] was born, was baby/[name] very small, small, average, large, or very large? (CIRCLE ONE RESPONSE)" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpBabySize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoBabySize1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Very small" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBabySize2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Small" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBabySize3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Average" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBabySize4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Large" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBabySize5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Very large" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBabySize6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBabySize7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineBabySize"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secWgtMsrd"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblWgtMsrd"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.21" />
+
+                <TextView
+                    android:id="@+id/VlblWgtMsrd"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Was baby/[name] weighed at birth?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpWgtMsrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtMsrd1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtMsrd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtMsrd3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtMsrd4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineWgtMsrd"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secWgtMsrdUnt"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblWgtMsrdUnt"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.22" />
+
+                <TextView
+                    android:id="@+id/VlblWgtMsrdUnt"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Which measurement system was followed to take the weight?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpWgtMsrdUnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtMsrdUnt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Pound/Ounce" />
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtMsrdUnt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Gm/Kg" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineWgtMsrdUnt"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secWgtPound"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblWgtPound"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.23" />
+
+                <TextView
+                    android:id="@+id/VlblWgtPound"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Pound" />
+
+                <EditText
+                    android:id="@+id/txtWgtPound"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineWgtPound"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secWgtGm"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblWgtGm"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.23" />
+
+                <TextView
+                    android:id="@+id/VlblWgtGm"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Gm/Kg" />
+
+                <EditText
+                    android:id="@+id/txtWgtGm"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineWgtGm"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secWgtDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblWgtDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblWgtDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Weight Don't know/Refused" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpWgtDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineWgtDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secWgtDtSrc"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblWgtDtSrc"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.24" />
+
+                <TextView
+                    android:id="@+id/VlblWgtDtSrc"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="From where the weight data was collected in earlier question?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpWgtDtSrc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtDtSrc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="From card (Facility)" />
+
+                    <RadioButton
+                        android:id="@+id/rdoWgtDtSrc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="From recall by the respondent" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineWgtDtSrc"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secBFStatus"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBFStatus"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.25" />
+
+                <TextView
+                    android:id="@+id/VlblBFStatus"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Did you ever breastfeed baby/[name]?\n(CIRCLE ONE RESPONSE)" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpBFStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoBFStatus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBFStatus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBFStatus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBFStatus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineBFStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secBFTime"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBFTime"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.26" />
+
+                <TextView
+                    android:id="@+id/VlblBFTime"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="When was baby/[name] first breastfed?\n(CIRCLE ONE RESPONSE, OR WRITE RESPONSE FOR 7)
+(IF LESS THAN 1 HOUR, RECORD “00”;
+IF LESS THAN 24 HOURS,
+RECORD NUMBER OF HOURS;
+IF MORE THAN 24 HOURS,
+RECORD NUMBER OF DAYS)
+" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpBFTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoBFTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Immediately" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBFTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Hours" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBFTime3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Days" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBFTime4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Other" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBFTime5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoBFTime6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineBFTime"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secBFTimeDur"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBFTimeDur"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblBFTimeDur"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Breastfed Duration" />
+
+                <EditText
+                    android:id="@+id/txtBFTimeDur"
+                    style="@style/customEdit"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineBFTimeDur"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secBFTimeOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblBFTimeOth"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblBFTimeOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtBFTimeOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineBFTimeOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secNBRthHead"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblNBRthHead"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="B1.27" />
+
+                <TextView
+                    android:id="@+id/VlblNBRthHead"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is the relationship of baby/[name] to the household head?\n(CIRCLE ONE RESPONSE, OR WRITE RESPONSE FOR 7)\n
+*Only include this question if relationship with the household head is not asked as part of the household roster.
+For example: Still birth *" />
+
+                <Spinner
+                    android:id="@+id/spnNBRthHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineNBRthHead"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secNBRthHeadOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblNBRthHeadOth"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblNBRthHeadOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtNBRthHeadOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineNBRthHeadOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20sp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cmdSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/button_style_circle_line"
+                    android:text=" Save -> Continue "
+                    android:textColor="@drawable/button_style_line_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

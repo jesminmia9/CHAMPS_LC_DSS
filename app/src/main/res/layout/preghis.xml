@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color"
+    tools:viewBindingIgnore="true">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:text="Pregnancy History"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/seclbl00"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl00"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color" />
+
+                <TextView
+                    android:id="@+id/lblHlbl00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If there is any ever-married/cohabited woman &lt;50 years of age will be interviewed using this form (Respondent: Self)"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl00"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+            <LinearLayout
+                android:id="@+id/ll_member_name"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_member_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="lorem"
+                    android:gravity="center"
+                    android:textSize="@dimen/name_text_size"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_mem_name"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout android:id="@+id/secObsMatID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblObsMatID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblObsMatID" android:text="Maternal Info Internal ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtObsMatID" android:maxLength="20" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineObsMatID" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secMemID"  android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblMemID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblMemID" android:text="Member Internal ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtMemID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineMemID"  android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secHHID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblHHID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblHHID" android:text="Household ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtHHID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineHHID" android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secMSlNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblMSlNo" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblMSlNo" android:text="Member serial no" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtMSlNo" android:maxLength="2" android:layout_width="50sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+                <Spinner android:id="@+id/spnMSlNo1" android:drawSelectorOnTop="true" android:visibility="gone" android:layout_width="200sp" android:layout_height="wrap_content" android:layout_weight="0" android:prompt="@string/planet_prompt" android:textSize="20sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineMSlNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secObsVDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblObsVDate" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblObsVDate" android:text="Visit Date" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/dtpObsVDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineObsVDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+<!--
+            <LinearLayout android:id="@+id/secObsVStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblObsVStatus" android:text="1.2" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblObsVStatus" android:text="Interview Status" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <Spinner android:id="@+id/spnObsVStatus" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineObsVStatus" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secObsVStatusOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblObsVStatusOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblObsVStatusOth" android:text="Other specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtObsVStatusOth" android:maxLength="300" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineObsVStatusOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+-->
+
+            <LinearLayout
+                android:id="@+id/seclbl01l"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl01l"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color" />
+
+                <TextView
+                    android:id="@+id/lblHlbl01l"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Now I would like to ask about all the pregnancies and births you have had during your life."
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl01l"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/seclbl01"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl01"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="1.3"
+                    android:textColor="@color/form_heading_font_color" />
+
+                <TextView
+                    android:id="@+id/lblHlbl01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="When have you got married/cohabited?"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+            <!--    <LinearLayout android:id="@+id/secMarMon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">-->
+            <!--        <TextView android:id="@+id/lblMarMon" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />-->
+            <!--        <TextView android:id="@+id/VlblMarMon" android:text="Month" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>-->
+            <!--        <EditText android:id="@+id/txtMarMon" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>-->
+            <!--    </LinearLayout>-->
+            <!--    <View android:id="@+id/lineMarMon" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />-->
+            <!--    <LinearLayout android:id="@+id/secMarYear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">-->
+            <!--        <TextView android:id="@+id/lblMarYear" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />-->
+            <!--        <TextView android:id="@+id/VlblMarYear" android:text="Year" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>-->
+            <!--        <EditText android:id="@+id/txtMarYear" android:maxLength="4" android:layout_width="80sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>-->
+            <!--    </LinearLayout>-->
+            <!--    <View android:id="@+id/lineMarYear" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />-->
+
+            <LinearLayout android:id="@+id/secMarMon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblMarMon" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblMarMon" android:text="Month" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <Spinner android:id="@+id/spnMarMon" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineMarMon" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secMarYear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblMarYear" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblMarYear" android:text="Year" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <Spinner android:id="@+id/spnMarYear" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineMarYear" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+            <LinearLayout android:id="@+id/secMarDK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblMarDK" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblMarDK" android:text="Don’t Know" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkMarDK" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineMarDK" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+            <LinearLayout android:id="@+id/secEverPreg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblEverPreg" android:text="1.5" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblEverPreg" android:text="Have you ever been pregnant?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpEverPreg" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEverPreg1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEverPreg2" android:text="Yes" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineEverPreg" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secTotPreg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblTotPreg" android:text="1.6" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblTotPreg" android:text="How many times have you been pregnant, including livebirth, stillbirth and miscarriages/abortions?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtTotPreg" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineTotPreg" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secGaveBirth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblGaveBirth" android:text="1.7" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblGaveBirth" android:text="While pregnant have you ever given birth?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpGaveBirth" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGaveBirth1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGaveBirth2" android:text="Yes" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineGaveBirth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secChildLivWWo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblChildLivWWo" android:text="1.8" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblChildLivWWo" android:text="Do you have any sons or daughters to whom you have given birth and who are now living with you?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpChildLivWWo" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChildLivWWo1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChildLivWWo2" android:text="Yes" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineChildLivWWo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secSonLivWWo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblSonLivWWo" android:text="1.9" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblSonLivWWo" android:text="How many sons live with you? -IF NONE, RECORD ‘00’" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtSonLivWWo" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineSonLivWWo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secDaugLivWWo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblDaugLivWWo" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblDaugLivWWo" android:text="How many daughters live with you? -IF NONE, RECORD ‘00’" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtDaugLivWWo" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineDaugLivWWo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secChldLivOut" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblChldLivOut" android:text="1.10" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblChldLivOut" android:text="Do you have any sons or daughters to whom you have given birth who are still alive but do not live with you?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpChldLivOut" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChldLivOut1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChldLivOut2" android:text="Yes" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineChldLivOut" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/seclbl04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+                <TextView android:id="@+id/Vlbllbl04" android:text="1.11" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+                <TextView android:id="@+id/lblHlbl04" android:text="How many sons are alive but do not live with you? And How many daughters are alive but do not live with you? IF NONE, RECORD ‘00’
+" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+            </LinearLayout>
+            <View android:id="@+id/linelbl04" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secSonLivOut" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblSonLivOut" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblSonLivOut" android:text="Number of sons living elsewhere (IF NONE, RECORD ‘00’)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtSonLivOut" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineSonLivOut" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secDaugLivOut" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblDaugLivOut" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblDaugLivOut" android:text="Number of daughters living elsewhere (IF NONE, RECORD ‘00’)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtDaugLivOut" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineDaugLivOut" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secEarlyAlive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblEarlyAlive" android:text="1.12" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblEarlyAlive" android:text="Have you ever had a baby born alive that was born early (before 37 weeks)?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpEarlyAlive" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEarlyAlive1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEarlyAlive2" android:text="Yes" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEarlyAlive3" android:text="Don't Know" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineEarlyAlive" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secEarlyAliveNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblEarlyAliveNo" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblEarlyAliveNo" android:text="Born early (before 37 weeks)?  Number" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtEarlyAliveNo" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineEarlyAliveNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secChldDie" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblChldDie" android:text="1.13" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblChldDie" android:text="Have you ever given birth to a boy or a girl who was born alive but later died? IF NO, PROBE:  Any baby who cried or showed any sign of life but only survived a few hours or days or years?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpChldDie" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChldDie1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChldDie2" android:text="Yes" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineChldDie" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/seclbl05" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+                <TextView android:id="@+id/Vlbllbl05" android:text="1.14" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+                <TextView android:id="@+id/lblHlbl05" android:text="In all, how many boys have died? How many girls have died?   IF NONE, RECORD ‘00’
+" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+            </LinearLayout>
+            <View android:id="@+id/linelbl05" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secBoyDied" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblBoyDied" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblBoyDied" android:text="In all, how many boys have died? IF NONE, RECORD ‘00’" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtBoyDied" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineBoyDied" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secGirlDied" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblGirlDied" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblGirlDied" android:text="In all, How many girls have died? (IF NONE, RECORD ‘00’)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtGirlDied" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineGirlDied" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secChDiedFsMon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblChDiedFsMon" android:text="1.15" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblChDiedFsMon" android:text="How many children died in the first month of life?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtChDiedFsMon" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineChDiedFsMon" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secNotLivBrth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblNotLivBrth" android:text="1.16" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblNotLivBrth" android:text="Some pregnancies end before full term as miscarriage or an abortion, while others may result in a stillbirth.Have you had any pregnancies that did not result in live births?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpNotLivBrth" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoNotLivBrth1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoNotLivBrth2" android:text="Yes" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineNotLivBrth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/seclbl02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+                <TextView android:id="@+id/Vlbllbl02" android:text="1.17" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+                <TextView android:id="@+id/lblHlbl02" android:text="How many times did your pregnancies end with stillbirth and abortion?" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+            </LinearLayout>
+            <View android:id="@+id/linelbl02" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secTotNotLB" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblTotNotLB" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblTotNotLB" android:text="Total number" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtTotNotLB" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineTotNotLB" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secTotNotLBDk" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblTotNotLBDk" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblTotNotLBDk" android:text="Total number Don’t know" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkTotNotLBDk" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineTotNotLBDk" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secStillBirth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblStillBirth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblStillBirth" android:text="Number of stillbirths" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtStillBirth" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+                <CheckBox android:id="@+id/chkStillBirthDk" android:layout_width="60sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/VlblStillBirthDk" android:text="Don't know" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineStillBirth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secStillBirthDk" android:visibility="gone"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblStillBirthDk" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblStillBirthDk1" android:text="Don't know" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkStillBirthDk1" android:layout_width="60sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineStillBirthDk" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secMiscAbor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblMiscAbor" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblMiscAbor" android:text="Number of abortions" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtMiscAbor" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+                <CheckBox android:id="@+id/chkMiscAborDk" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/VlblMiscAborDk" android:text="Don’t know" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineMiscAbor" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secMiscAborDk" android:visibility="gone"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblMiscAborDk" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblMiscAborDk1" android:text="Don’t know" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkMiscAborDk1" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineMiscAborDk" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/seclbl06" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+                <TextView android:id="@+id/Vlbllbl06" android:text="1.18" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+                <TextView android:id="@+id/lblHlbl06" android:text="What was the outcome of your last pregnancy?
+If multiple births happened on one pregnancy then we will record one birth (live or still or abortion) based on priority. For example, if a pregnancy outcome resulted in 1 still birth and 1 live birth, we will record live birth." android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+            </LinearLayout>
+            <View android:id="@+id/linelbl06" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secLastPregRes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblLastPregRes" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblLastPregRes" android:text="Types of outcome" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpLastPregRes" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLastPregRes1" android:text="Live birth" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLastPregRes2" android:text="Stillbirth" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLastPregRes3" android:text="Abortion" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineLastPregRes" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secLastOutDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblLastOutDate" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblLastOutDate" android:text="Delivery Outcome date " android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/dtpLastOutDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineLastOutDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secLastOutDateDK" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblLastOutDateDK" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblLastOutDateDK" android:text="Date Don't know" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkLastOutDateDK" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineLastOutDateDK" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secCesarean" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblCesarean" android:text="1.19" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblCesarean" android:text="Have you ever had a cesarean operation for any of your delivery?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpCesarean" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCesarean1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCesarean2" android:text="Yes" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCesarean3" android:text="Don't Know" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View android:id="@+id/lineCesarean" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secCesareanNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblCesareanNo" android:text="1.20" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblCesareanNo" android:text="How many have you ever had a cesarean operation?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtCesareanNo" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineCesareanNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secTotPregOut" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblTotPregOut" android:text="1.21" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblTotPregOut" android:text="Sum answers 1.9, 1.11, 1.14 and 1.17 and enter total   -Number of total pregnancy outcome" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtTotPregOut" android:maxLength="2" android:enabled="false" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineTotPregOut" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+            <LinearLayout android:id="@+id/secObsNote" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblObsNote" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblObsNote" android:text="Note" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <!--        <EditText android:id="@+id/txtObsNote" android:maxLength="300" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>-->
+            </LinearLayout>
+            <View android:id="@+id/lineObsNote"  android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+            <LinearLayout android:id="@+id/secObsVStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblObsVStatus" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblObsVStatus" android:text="Interview Status" android:textStyle="bold" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <Spinner android:id="@+id/spnObsVStatus" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineObsVStatus" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secObsVStatusOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblObsVStatusOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblObsVStatusOth" android:text="Other specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtObsVStatusOth" android:maxLength="300" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineObsVStatusOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+            <LinearLayout android:id="@+id/secObsNote1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblObsNote1" android:text="Note" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <!--            <TextView android:id="@+id/VlblObsNote1" android:text="" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>-->
+                <EditText android:id="@+id/txtObsNote" android:maxLength="300" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineObsNote1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+            <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line"
+                    android:text=" Save -> Continue " android:textColor="@drawable/button_style_line_text_color" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

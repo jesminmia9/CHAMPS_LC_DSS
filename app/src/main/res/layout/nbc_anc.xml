@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cmdBack"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pageHeadingBack"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lblHeading"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="ANTENATAL CARE (B2)"
+                android:textColor="@color/pageHeading" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/secNBID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblNBID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblNBID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Birth Internal ID" />
+
+                <EditText
+                    android:id="@+id/txtNBID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineNBID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secMemID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblMemID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMemID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Member ID" />
+
+                <EditText
+                    android:id="@+id/txtMemID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMemID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secHHID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblHHID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblHHID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Household ID" />
+
+                <EditText
+                    android:id="@+id/txtHHID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineHHID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secPGN"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblPGN"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblPGN"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="PGN" />
+
+                <EditText
+                    android:id="@+id/txtPGN"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linePGN"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secAnc"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAnc"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B2.3" />
+
+                <TextView
+                    android:id="@+id/VlblAnc"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Did you see anyone for antenatal care during your pregnancy with baby/[name]? (HERE ANTENATAL CARE REFERS TO HEALTHCARE SERVICES RATHER THAN SPIRITUAL SERVICES FROM A COMMUNITY SHAMAN)" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpAnc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoAnc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoAnc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoAnc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoAnc4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAnc"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncNo"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncNo"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B2.5" />
+
+                <TextView
+                    android:id="@+id/VlblAncNo"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="How many times did you receive antenatal care during your pregnancy with baby/[name]?" />
+
+                <EditText
+                    android:id="@+id/txtAncNo"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncNo"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncNoDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncNoDk"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblAncNoDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpAncNoDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoAncNoDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoAncNoDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncNoDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncCard"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncCard"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B2.6" />
+
+                <TextView
+                    android:id="@+id/VlblAncCard"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Do you have an antenatal care (ANC) card?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpAncCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoAncCard1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoAncCard2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoAncCard3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoAncCard4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncCard"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout android:id="@+id/seclbl04" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+                <TextView android:id="@+id/Vlbllbl04" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+                <TextView android:id="@+id/lblHlbl04" android:text="What are the reasons why you did not attend antenatal care at least four times during your pregnancy with baby/[name]" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+            </LinearLayout>
+            <View android:id="@+id/linelbl04" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncLackMoney" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncLackMoney" android:text="A" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncLackMoney" android:text="Lack of finances/money" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkAncLackMoney" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineAncLackMoney" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncLackTransport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncLackTransport" android:text="B" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncLackTransport" android:text="Lack of transportation" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkAncLackTransport" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineAncLackTransport" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncDistance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncDistance" android:text="C" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncDistance" android:text="Distance to the health Centre" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkAncDistance" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineAncDistance" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncAttitude" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncAttitude" android:text="D" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncAttitude" android:text="Attitude of health workers" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkAncAttitude" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineAncAttitude" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncPreference" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncPreference" android:text="E" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncPreference" android:text="Preference for local herbs" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkAncPreference" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineAncPreference" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncRsnOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncRsnOth" android:text="X" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncRsnOth" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkAncRsnOth" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineAncRsnOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncRsnOthSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncRsnOthSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncRsnOthSp" android:text="Other specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <EditText android:id="@+id/txtAncRsnOthSp" android:maxLength="200" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+            </LinearLayout>
+            <View android:id="@+id/lineAncRsnOthSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncRsnDk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncRsnDk" android:text="Y" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncRsnDk" android:text="Don't know" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkAncRsnDk" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineAncRsnDk" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secAncRsnRefu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblAncRsnRefu" android:text="Z" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblAncRsnRefu" android:text="Refused to respond" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+                <CheckBox android:id="@+id/chkAncRsnRefu" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+            </LinearLayout>
+            <View android:id="@+id/lineAncRsnRefu" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+            <LinearLayout
+                android:id="@+id/secANCPres"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblANCPres"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B2.7" />
+
+                <TextView
+                    android:id="@+id/VlblANCPres"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Do you have any prescriptions for your antenatal care checkup during this pregnancy period?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpANCPres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoANCPres1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoANCPres2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoANCPres3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoANCPres4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineANCPres"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/seclbl01"
+                    style="@style/rowHeading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Vlbllbl01"
+                        android:layout_width="40sp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/form_heading_font_color"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/lblHlbl01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ANC List"
+                        android:textColor="@color/form_heading_font_color" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/linelbl01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#CCCCCC" />
+
+                <include
+                    layout="@layout/nbc_ancdetailheading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/form_background_color"
+                        android:scrollbars="vertical" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ll_no_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical|left"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_nodata"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp" />
+
+                        <TextView
+                            android:id="@+id/tv_nodata"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:gravity="center"
+                            android:text="No data found"
+                            android:textColor="#333333"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_add_direc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="16dp" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_white"
+                        android:padding="10sp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/button_style_circle_line_theme_back"
+                            android:gravity="center"
+                            android:stateListAnimator="@null"
+                            android:text="+ New ANC Visit"
+                            android:textColor="@drawable/button_style_circle_text_color_white" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineanclist"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/seclbl03"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl03"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B2.13"
+                    android:textColor="@color/form_heading_font_color" />
+
+                <TextView
+                    android:id="@+id/lblHlbl03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="As part of your antenatal care during this pregnancy, did a healthcare provider do."
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl03"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncWeight"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncWeight"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="A" />
+
+                <TextView
+                    android:id="@+id/VlblAncWeight"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Measure your weight?" />
+
+                <CheckBox
+                    android:id="@+id/chkAncWeight"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncWeight"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncBp"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncBp"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B" />
+
+                <TextView
+                    android:id="@+id/VlblAncBp"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Measure blood pressure?" />
+
+                <CheckBox
+                    android:id="@+id/chkAncBp"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncBp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncUrine"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncUrine"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="C" />
+
+                <TextView
+                    android:id="@+id/VlblAncUrine"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Take a urine sample?" />
+
+                <CheckBox
+                    android:id="@+id/chkAncUrine"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncUrine"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncBlood"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncBlood"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="D" />
+
+                <TextView
+                    android:id="@+id/VlblAncBlood"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Take a blood sample?" />
+
+                <CheckBox
+                    android:id="@+id/chkAncBlood"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncBlood"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncHeartbeat"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncHeartbeat"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="E" />
+
+                <TextView
+                    android:id="@+id/VlblAncHeartbeat"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Listen to the babys heartbeat?" />
+
+                <CheckBox
+                    android:id="@+id/chkAncHeartbeat"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncHeartbeat"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncUSG"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncUSG"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/VlblAncUSG"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Performed an ultrasound?" />
+
+                <CheckBox
+                    android:id="@+id/chkAncUSG"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncUSG"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncFood"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncFood"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="G" />
+
+                <TextView
+                    android:id="@+id/VlblAncFood"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Talk with you about foods to eat?" />
+
+                <CheckBox
+                    android:id="@+id/chkAncFood"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncFood"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secANCBF"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblANCBF"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="H" />
+
+                <TextView
+                    android:id="@+id/VlblANCBF"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Talk with you about breastfeeding?" />
+
+                <CheckBox
+                    android:id="@+id/chkANCBF"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineANCBF"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secANCVBleed"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblANCVBleed"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="I" />
+
+                <TextView
+                    android:id="@+id/VlblANCVBleed"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Talk with you about vaginal bleeding" />
+
+                <CheckBox
+                    android:id="@+id/chkANCVBleed"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineANCVBleed"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secANCDSign"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblANCDSign"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="J" />
+
+                <TextView
+                    android:id="@+id/VlblANCDSign"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Danger signs?" />
+
+                <CheckBox
+                    android:id="@+id/chkANCDSign"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineANCDSign"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secANCFPMtd"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblANCFPMtd"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="K" />
+
+                <TextView
+                    android:id="@+id/VlblANCFPMtd"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="FP method after birth?" />
+
+                <CheckBox
+                    android:id="@+id/chkANCFPMtd"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineANCFPMtd"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secANCHCOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblANCHCOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="X" />
+
+                <TextView
+                    android:id="@+id/VlblANCHCOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other" />
+
+                <CheckBox
+                    android:id="@+id/chkANCHCOth"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineANCHCOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secANCHCOthSp"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblANCHCOthSp"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblANCHCOthSp"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtANCHCOthSp"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineANCHCOthSp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secAncHCDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblAncHCDk"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Y" />
+
+                <TextView
+                    android:id="@+id/VlblAncHCDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know" />
+
+                <CheckBox
+                    android:id="@+id/chkAncHCDk"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAncHCDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secANCRefu"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblANCRefu"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Z" />
+
+                <TextView
+                    android:id="@+id/VlblANCRefu"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Refused to respond" />
+
+                <CheckBox
+                    android:id="@+id/chkANCRefu"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineANCRefu"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20sp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cmdSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/button_style_circle_line"
+                    android:text=" Save -> Continue "
+                    android:textColor="@drawable/button_style_line_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

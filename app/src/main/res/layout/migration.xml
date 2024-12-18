@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cmdBack"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@color/pageHeadingBack"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lblHeading"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-56dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="New Entry"
+                android:textAlignment="center"
+                android:textColor="@color/pageHeading"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:id="@+id/lblEvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="20"
+                android:textColor="@color/pageHeading"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/secTitle"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/VlblTitle"
+                    style="@style/rowHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:gravity="center"
+                    android:text="Instruction: If a member permanently moved into a household permanently from outside of DSS" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+            <LinearLayout
+                android:id="@+id/secMigrationID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblMigrationID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigrationID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Migration in/out internal ID" />
+
+                <EditText
+                    android:id="@+id/txtMigrationID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigrationID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secHHID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblHHID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblHHID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Household ID" />
+
+                <EditText
+                    android:id="@+id/txtHHID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineHHID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secMemID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblMemID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMemID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Member internal ID" />
+
+                <EditText
+                    android:id="@+id/txtMemID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMemID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/secMigEvType1"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigEvType1"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="1." />
+                <!--<TextView android:id="@+id/VlblMigEvType" android:text="Event Type of migration" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigEvType1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/secMigEvType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="45sp">
+
+                <TextView
+                    android:id="@+id/lblMigEvType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/VlblMigEvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Event Type of migration" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpMigEvType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoMigEvType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Registration" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigEvType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Migration in from Outside DSS Area" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigEvType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Migration out to Outside DSS Area" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigEvType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="1." />
+
+                <TextView
+                    android:id="@+id/VlblMigDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="When did he/she move?" />
+
+                <EditText
+                    android:id="@+id/dtpMigDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigLocType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigLocType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="5" />
+
+                <TextView
+                    android:id="@+id/VlblMigLocType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Where did he/she move/come from?  - (internal, external)" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpMigLocType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoMigLocType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Inside Country" />
+                    <RadioButton
+                        android:id="@+id/rdoMigLocType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:visibility="gone"
+                        android:text="Inside Country (In the state)" />
+                    <RadioButton
+                        android:id="@+id/rdoMigLocType4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:visibility="gone"
+                        android:text="Inside Country (Outside the state)" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigLocType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Outside Country" />
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigLocType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigAdminL4"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigAdminL4"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigAdminL4"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Address level 4" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigAdminL4"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigAdminL4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigAdminL1"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigAdminL1"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigAdminL1"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Address level 1" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigAdminL1"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+<!--                <Spinner android:id="@+id/spnLayer1" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigAdminL1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigAdminL2"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigAdminL2"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigAdminL2"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Address level 2" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigAdminL2"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+<!--                <Spinner android:id="@+id/spnLayer2" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigAdminL2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigAdminL3"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigAdminL3"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigAdminL3"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Address level 3" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigAdminL3"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+<!--                <Spinner android:id="@+id/spnLayer3" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigAdminL3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+
+
+            <LinearLayout
+                android:id="@+id/secMigAdminLArea"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigAdminLArea"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigAdminLArea"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Admin Level 5" />
+
+                <EditText
+                    android:id="@+id/txtMigAdminLArea"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="350" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigAdminLArea"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigCountry"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigCountry"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="5b" />
+
+                <TextView
+                    android:id="@+id/VlblMigCountry"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Name of the outside country" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigCountry"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="150"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigCountry"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigBirthCountry"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigBirthCountry"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="5c" />
+
+                <TextView
+                    android:id="@+id/VlblMigBirthCountry"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Country of birth" />
+
+                <Spinner
+                    android:id="@+id/spnMigBirthCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigBirthCountry"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigBirthCountryOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigBirthCountryOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigBirthCountryOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Specify Others" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigBirthCountryOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigBirthCountryOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigOriginCountry"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigOriginCountry"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="6a" />
+
+                <TextView
+                    android:id="@+id/VlblMigOriginCountry"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Country of origin" />
+
+                <Spinner
+                    android:id="@+id/spnMigOriginCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigOriginCountry"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigOriginCountryOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigOriginCountryOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigOriginCountryOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Specify Others" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigOriginCountryOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigOriginCountryOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigWCRegionBurCity"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigWCRegionBurCity"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="6b" />
+
+                <TextView
+                    android:id="@+id/VlblMigWCRegionBurCity"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="City in the west central region of Burkina" />
+
+                <Spinner
+                    android:id="@+id/spnMigWCRegionBurCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigWCRegionBurCity"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigBurCity"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigBurCity"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="6c" />
+
+                <TextView
+                    android:id="@+id/VlblMigBurCity"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Burkinas city" />
+
+                <Spinner
+                    android:id="@+id/spnMigBurCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigBurCity"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+
+            <LinearLayout
+                android:id="@+id/secMigReason"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigReason"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/VlblMigReason"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the reason for the migration?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpMigReason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Work" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Education" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Health care" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Marriage" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Environmental/Natural disaster" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Displacement" />
+
+                    <!--                    for Mali site added -->
+                    <RadioButton
+                        android:id="@+id/rdoMigReason7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="FARMING " />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Moved to a new compound/house" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Arrival with parents" />
+                    <RadioButton
+                        android:id="@+id/rdoMigReason13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="came/gone with relatives"/>
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Back in family" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Waiting for marriage" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Disagreement"
+                        android:visibility="gone"/>
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason97"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Other" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason98"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don’t know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigReason99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to response" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigReason"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigReasonOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigReasonOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigReasonOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigReasonOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigReasonOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigMaritalChangeReason"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigMaritalChangeReason"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="9" />
+
+                <TextView
+                    android:id="@+id/VlblMigMaritalChangeReason"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="If reason is matrimonial status change" />
+
+                <Spinner
+                    android:id="@+id/spnMigMaritalChangeReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigMaritalChangeReason"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigMaritalChangeReasonOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigMaritalChangeReasonOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigMaritalChangeReasonOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Others Specify" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigMaritalChangeReasonOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigMaritalChangeReasonOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigAbleToRW"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigAbleToRW"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="10" />
+
+                <TextView
+                    android:id="@+id/VlblMigAbleToRW"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Are you able to read or write?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpMigAbleToRW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoMigAbleToRW1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigAbleToRW2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigAbleToRW"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/seclbl01"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl01"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="11"
+                    android:textColor="@color/form_heading_font_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblHlbl01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If yes, specify the language"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkMigLanguageA"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkMigLanguageA"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="A." />
+
+                <TextView
+                    android:id="@+id/VlblchkMigLanguageA"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="French" />
+
+                <CheckBox
+                    android:id="@+id/chkchkMigLanguageA"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkMigLanguageA"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkMigLanguageB"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkMigLanguageB"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B." />
+
+                <TextView
+                    android:id="@+id/VlblchkMigLanguageB"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="English" />
+
+                <CheckBox
+                    android:id="@+id/chkchkMigLanguageB"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkMigLanguageB"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkMigLanguageC"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkMigLanguageC"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="C." />
+
+                <TextView
+                    android:id="@+id/VlblchkMigLanguageC"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Arabic" />
+
+                <CheckBox
+                    android:id="@+id/chkchkMigLanguageC"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkMigLanguageC"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkMigLanguageD"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkMigLanguageD"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="D." />
+
+                <TextView
+                    android:id="@+id/VlblchkMigLanguageD"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Others (Specify)" />
+
+                <CheckBox
+                    android:id="@+id/chkchkMigLanguageD"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkMigLanguageD"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigLanguageOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigLanguageOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigLanguageOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Specify Others" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtMigLanguageOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigLanguageOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigOccupation"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigOccupation"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="12" />
+
+                <TextView
+                    android:id="@+id/VlblMigOccupation"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Your occupation during the last 12 months" />
+
+                <Spinner
+                    android:id="@+id/spnMigOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigOccupation"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigTotalUnion"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigTotalUnion"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="13" />
+
+                <TextView
+                    android:id="@+id/VlblMigTotalUnion"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Total number of unions/marriage already contracted by the migrant" />
+
+                <EditText
+                    android:id="@+id/txtMigTotalUnion"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigTotalUnion"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigFirstUnionDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigFirstUnionDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="14" />
+
+                <TextView
+                    android:id="@+id/VlblMigFirstUnionDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Start date of first union" />
+
+                <EditText
+                    android:id="@+id/dtpMigFirstUnionDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigFirstUnionDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigUnionRupture"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigUnionRupture"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="15" />
+
+                <TextView
+                    android:id="@+id/VlblMigUnionRupture"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Have you ever known an union rupture?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpMigUnionRupture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoMigUnionRupture1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMigUnionRupture2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigUnionRupture"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigRuptureDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigRuptureDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="16" />
+
+                <TextView
+                    android:id="@+id/VlblMigRuptureDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Date of rupture of the last union" />
+
+                <EditText
+                    android:id="@+id/dtpMigRuptureDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigRuptureDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigNotDisUnionDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigNotDisUnionDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="17" />
+
+                <TextView
+                    android:id="@+id/VlblMigNotDisUnionDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Start date of last union not yet dissolved" />
+
+                <EditText
+                    android:id="@+id/dtpMigNotDisUnionDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigNotDisUnionDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+
+            <LinearLayout
+                android:id="@+id/secMigVDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigVDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="4." />
+
+                <TextView
+                    android:id="@+id/VlblMigVDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Visit date" />
+
+                <EditText
+                    android:id="@+id/dtpMigVDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigVDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/secRnd"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblRnd"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="5." />
+
+                <TextView
+                    android:id="@+id/VlblRnd"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Round" />
+
+                <EditText
+                    android:id="@+id/txtRnd"
+                    style="@style/customEdit"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineRnd"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMigNote"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblMigNote"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMigNote"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Note" />
+                <!--        <EditText android:id="@+id/txtMigNote" android:maxLength="250" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigNote"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secMigNote1"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMigNote1"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:text="Note" />
+                <!--            <TextView android:id="@+id/VlblMigNote1" android:text="Note" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>-->
+                <EditText
+                    android:id="@+id/txtMigNote"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text|textCapWords"
+                    android:maxLength="250" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMigNote1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20sp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cmdSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/button_style_circle_line"
+                    android:text=" Save -> Continue "
+                    android:textColor="@drawable/button_style_line_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

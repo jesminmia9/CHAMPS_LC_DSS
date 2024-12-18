@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.icddrb.champs_lc_dss"
+    android:installLocation="preferExternal">
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GPS" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="apps_font.CustomFontApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_app"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo_app"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/CustomTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="forms_activity.Surv_Event_list" />
+        <activity android:name=".PreparingDatabase" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Splash_Screen"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".data_form_master" />
+        <activity android:name=".data_from_content" />
+        <activity android:name="print.PrintExampleActivity" />
+        <activity android:name=".Scan_Barcode_Activity" />
+
+        <service android:name=".DataSyncService" />
+        <service android:name=".Sync_Service" />
+        <service android:name=".GPSService" />
+        <service android:name=".DatabaseFileSync_Service" />
+        <service android:name=".Sync_Service_DatabaseStructure" />
+
+        <activity android:name="forms_system.DeviceList" />
+        <activity android:name="forms_system.DeviceList_list" />
+        <activity android:name=".Fragment_Main"  android:screenOrientation="portrait"/>
+        <activity android:name="forms_activity.Baseline_ChildChar" />
+        <activity android:name="forms_activity.DeathNotifi" />
+        <activity android:name="forms_activity.DeathNotifi_list" />
+        <activity android:name="forms_activity.Compound" />
+        <activity android:name="forms_activity.Compound_list" />
+        <activity android:name="forms_activity.GPSCompound" />
+        <activity android:name="forms_activity.GPSCompound_list" />
+        <activity android:name="forms_activity.GPSLandmark" />
+        <activity android:name="forms_activity.GPSLandmark_list" />
+        <activity android:name="forms_activity.GPS" />
+        <activity android:name="forms_activity.Household_list" />
+        <activity android:name="forms_activity.Household" />
+        <activity android:name="forms_activity.Visits" />
+        <activity android:name="forms_activity.Baseline_Member_list" />
+        <activity android:name="forms_activity.Baseline_Member" />
+        <activity android:name="forms_activity.SES" />
+        <activity android:name="forms_activity.Surv_Compound_list" />
+        <activity android:name="forms_activity.Surv_Compound" />
+        <activity android:name="forms_activity.Surv_Household_list" />
+        <activity android:name="forms_activity.Surv_Household" />
+        <activity android:name="forms_activity.Surv_Visits" />
+        <activity android:name="forms_activity.Surv_Member_list" />
+        <activity android:name="forms_activity.Surv_Member" />
+        <activity android:name="forms_activity.Surv_Migration" />
+        <activity android:name="forms_activity.Surv_SES" />
+        <activity android:name="forms_activity.Surv_SES_list" />
+        <activity android:name="forms_activity.Surv_Movement" />
+        <activity android:name="forms_activity.Surv_MotherSerial" />
+        <activity android:name="forms_activity.Surv_FatherSerial" />
+        <activity android:name="forms_activity.Surv_SpouseSerial" />
+        <activity android:name="forms_activity.Surv_Relation" />
+        <activity android:name="forms_activity.Surv_Education" />
+        <activity android:name="forms_activity.Surv_Occupation" />
+        <activity android:name="forms_activity.Surv_NotPregnant" />
+        <activity android:name="forms_activity.Surv_Death" />
+        <activity android:name="forms_activity.Surv_MaritalSts" />
+        <activity android:name="forms_activity.Surv_LiveBirth" />
+        <activity android:name="forms_activity.Surv_StillBirth" />
+        <activity android:name="forms_activity.Surv_PregHis" />
+        <activity android:name="forms_activity.Surv_Migration_Member_list" />
+        <activity android:name="forms_activity.Surv_PregHis_list" />
+        <activity android:name="forms_activity.GPS_list" />
+        <activity android:name="forms_activity.Surv_Pregnancy" />
+        <activity android:name="forms_activity.Surv_Delivery" />
+        <activity android:name="forms_activity.Baseline_Compound_list" />
+        <activity android:name="forms_activity.Baseline_Household" />
+        <activity android:name="forms_activity.Baseline_Household_list" />
+        <activity android:name="forms_activity.Baseline_Visits" />
+        <activity android:name="forms_activity.Baseline_Compound" />
+        <activity android:name="forms_activity.Baseline_Caregiver" />
+        <activity android:name="forms_activity.Vaccination" />
+        <activity android:name="forms_activity.Vaccination_list" />
+        <activity android:name="forms_activity.Surv_Visits_list" />
+        <activity android:name="forms_activity.PregHis" />
+        <activity android:name="forms_activity.Baseline_SES" />
+        <activity android:name="forms_activity.Surv_delivery_module" />
+        <activity android:name="forms_activity.Surv_Abortion" />
+        <activity android:name="forms_activity.NBC_NBCare" />
+        <activity android:name="forms_activity.NBC_NBCareDetail" />
+        <activity android:name="forms_activity.NBC_ANC_list" />
+        <activity android:name="forms_activity.NBC_ANCDetail" />
+        <activity android:name="forms_activity.NBC_NBCare_list" />
+        <activity android:name="forms_activity.NBC_PNCMoth" />
+        <activity android:name="forms_activity.NBC_PNCMothDetail_list" />
+        <activity android:name="forms_activity.NBC_PNCMothDetail" />
+        <activity android:name="forms_activity.NBC_NBCareDetail_list" />
+        <activity android:name="forms_activity.NBC_ANC" />
+        <activity android:name="forms_activity.NBC_ANCDetail_list" />
+        <activity android:name="forms_activity.NBC_PNCNB" />
+        <activity android:name="forms_activity.NBC_Morbidity" />
+        <activity android:name="forms_activity.NBC_PNCNBDetail" />
+        <activity android:name="forms_activity.Surv_TemporaryMigrationIn" />
+        <activity android:name="forms_activity.Surv_TemporaryMigrationOut" />
+        <activity android:name="forms_activity.Surv_SES_Mali" />
+        <activity android:name="forms_activity.Surv_SES_MALI_list" />
+        <activity android:name="forms_activity.Surv_DeathNotifi_list" />
+        <activity android:name="forms_activity.Surv_DeathNotifi" />
+        <activity android:name="forms_activity.cleaning_household_list" android:label="Data Error List" android:theme="@style/CustomTheme.Dialog" />
+        <activity android:name="forms_activity.Surv_Caregiver" />
+        <activity android:name="forms_activity.Surv_ChildChar" />
+        <activity android:name="forms_activity.Surv_SES_CrossRiver" />
+        <activity android:name="forms_activity.CONTRACEPTIVE_BEHAVIOUR" />
+        <activity android:name="forms_activity.Surv_Anthropometric" />
+        <activity android:name="forms_activity.Climate_Change" />
+        <activity android:name="forms_activity.Climate_Change_list" />
+
+    </application>
+
+</manifest>

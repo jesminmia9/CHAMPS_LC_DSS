@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cmdBack"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@color/pageHeadingBack"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_marginLeft="-56dp"
+                android:id="@+id/lblHeading"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Delivery"
+                android:textAlignment="center"
+                android:textColor="@color/pageHeading"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblEvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="20"
+                android:textColor="@color/pageHeading"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/secPregOccurID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblPregOccurID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblPregOccurID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Pregnancy Occurrence Internal ID" />
+
+                <EditText
+                    android:id="@+id/txtPregOccurID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linePregOccurID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDeliveryID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDeliveryID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDeliveryID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Delivery Internal ID" />
+
+                <EditText
+                    android:id="@+id/txtDeliveryID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDeliveryID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secHHID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblHHID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblHHID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Household ID" />
+
+                <EditText
+                    android:id="@+id/txtHHID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineHHID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secMemID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblMemID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMemID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Member internal ID" />
+
+                <EditText
+                    android:id="@+id/txtMemID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMemID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDelDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="1." />
+
+                <TextView
+                    android:id="@+id/VlblDelDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the date of pregnancy outcome?  (Day/Month/Year)" />
+
+                <EditText
+                    android:id="@+id/dtpDelDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelDateType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelDateType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="2." />
+
+                <TextView
+                    android:id="@+id/VlblDelDateType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Pregnancy Outcome date Type" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpDelDateType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoDelDateType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Exact" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDelDateType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Approximate" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDelDateType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Unknown" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelDateType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelTime"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelTime"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="3." />
+
+                <TextView
+                    android:id="@+id/VlblDelTime"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is the time of pregnancy outcome?" />
+
+                <EditText
+                    android:id="@+id/txtDelTime"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/clocksmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelTime"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelTimeType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelTimeType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="4." />
+
+                <TextView
+                    android:id="@+id/VlblDelTimeType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Pregnancy outcome time type." />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpDelTimeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoDelTimeType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Exact" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDelTimeType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Approximate" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDelTimeType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Unknown" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelTimeType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secTotOut"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTotOut"
+                    android:layout_width="40sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="5." />
+
+                <TextView
+                    android:id="@+id/VlblTotOut"
+                    android:layout_width="250sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is/are the number of pregnancy outcome?" />
+
+                <EditText
+                    android:id="@+id/txtTotOut"
+                    style="@style/customEdit"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineTotOut"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secTotLB"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTotLB"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblTotLB"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is/are the number of live births?" />
+
+                <EditText
+                    android:id="@+id/txtTotLB"
+                    style="@style/customEdit"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineTotLB"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secTotMis"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTotMis"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblTotMis"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is/are the number of spontaneous miscarriages/abortions?" />
+
+                <EditText
+                    android:id="@+id/txtTotMis"
+                    style="@style/customEdit"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineTotMis"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secTotSB"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTotSB"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblTotSB"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is/are the number of stillbirths?" />
+
+                <EditText
+                    android:id="@+id/txtTotSB"
+                    style="@style/customEdit"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineTotSB"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secTotAB"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTotAB"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblTotAB"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is/are the number of induced abortions?" />
+
+                <EditText
+                    android:id="@+id/txtTotAB"
+                    style="@style/customEdit"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineTotAB"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDelVDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelVDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="6." />
+
+                <TextView
+                    android:id="@+id/VlblDelVDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Visit date" />
+
+                <EditText
+                    android:id="@+id/dtpDelVDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelVDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secRnd"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblRnd"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblRnd"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Round number" />
+
+                <EditText
+                    android:id="@+id/txtRnd"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineRnd"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDelNote"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDelNote"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDelNote"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Note" />
+                <!--        <EditText android:id="@+id/txtDelNote" android:maxLength="250" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelNote"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDelNote1"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDelNote1"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Note" />
+                <!--            <TextView android:id="@+id/VlblDelNote1" android:text="Note" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>-->
+                <EditText
+                    android:id="@+id/txtDelNote"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="250" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDelNote1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20sp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cmdSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/button_style_circle_line"
+                    android:text=" Save -> Continue "
+                    android:textColor="@drawable/button_style_line_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

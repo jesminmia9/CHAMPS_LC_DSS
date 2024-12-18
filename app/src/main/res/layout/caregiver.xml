@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/form_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cmdBack"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@color/pageHeadingBack"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lblHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="Caregiver"
+                android:textColor="@color/pageHeading" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/secCaregID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblCaregID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblCaregID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Caregiver Internal ID" />
+
+                <EditText
+                    android:id="@+id/txtCaregID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineCaregID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/seclbl01"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl01"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblHlbl01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REVIEW THE ROSTER AND ASK TO SPEAK WITH THE MOTHER OR PRIMARY CAREGIVER OF EACH CHILD UNDER THE AGE OF 5 (INCLUDING NEWBORNS). NOTE THAT THE MOTHER OR PRIMARY CAREGIVER IS THE IDEAL RESPONDENT FOR MODULES B, C, AND M). A LOOP OR MULTIPLE COPIES OF THIS MODULE MAY NEED TO BE CREATED SO THAT INFORMATION FOR THE MOTHER OR PRIMARY CAREGIVER OF EACH CHILD UNDER THE AGE OF 5 CAN BE COLLECTED AS NEEDED. IF A CHILD’S MOTHER/PRIMARY CAREGIVER IS NOT AVAILABLE AND AN APPOINTMENT CAN’T BE SCHDULED, ANOTHER ADULT HOUSEHOLD MEMBER MAY ANSWER AS PROXY."
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/seclbl02"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl02"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblHlbl02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INTERVIEWER: I would like to speak with the mother or primary caregiver of child/[name]. If you are the primary caregiver of child/[name], please allow me to ask you about yourself in detail.\nIf the mother or primary caregiver of child/[name] is not available, when would be a better time return to speak with her? \nRECORD THE RETURN DATE (dd/mm/yyyy) AND RETURN TIME AM/PM
+If it is not possible to meet now or in the future with the mother or primary caregiver, then I may I please speak with another adult household member to ask questions about the primary caregiver of child/[name]?
+"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl02"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+            <LinearLayout
+                android:id="@+id/ll_member_name"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_member_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="lorem"
+                    android:gravity="center"
+                    android:textSize="@dimen/name_text_size"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_mem_name"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMemID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMemID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMemID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Child ID" />
+
+                <EditText
+                    android:id="@+id/txtMemID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMemID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secHHID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblHHID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblHHID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Household ID" />
+
+                <EditText
+                    android:id="@+id/txtHHID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineHHID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secRespName"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblRespName"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblRespName"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Record respondent’s name" />
+
+                <EditText
+                    android:id="@+id/txtRespName"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="100" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineRespName"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secRespID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblRespID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M2." />
+
+                <TextView
+                    android:id="@+id/VlblRespID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Record respondents individual ID number" />
+
+                <EditText
+                    android:id="@+id/txtRespID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="20" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineRespID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secIsMem"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblIsMem"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M2.1." />
+
+                <TextView
+                    android:id="@+id/VlblIsMem"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Is caregiver member of this household?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpIsMem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoIsMem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoIsMem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineIsMem"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secCMemID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblCMemID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M2.2." />
+
+                <TextView
+                    android:id="@+id/VlblCMemID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Record caregivers individual ID number" />
+
+                <Spinner
+                    android:id="@+id/spnCMemID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineCMemID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secPriCaregiver"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblPriCaregiver"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M3." />
+
+                <TextView
+                    android:id="@+id/VlblPriCaregiver"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Are you the primary caregiver of the child/[name]?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpPriCaregiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoPriCaregiver1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPriCaregiver2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPriCaregiver3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoPriCaregiver4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linePriCaregiver"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secWhoPriCaregiver"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblWhoPriCaregiver"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M4." />
+
+                <TextView
+                    android:id="@+id/VlblWhoPriCaregiver"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Who is the primary caregiver of the child/[name]?" />
+
+                <Spinner
+                    android:id="@+id/spnWhoPriCaregiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineWhoPriCaregiver"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secWhoPrCaregOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblWhoPrCaregOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblWhoPrCaregOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+
+                <EditText
+                    android:id="@+id/txtWhoPrCaregOth"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineWhoPrCaregOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secPriCaregID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblPriCaregID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M5." />
+
+                <TextView
+                    android:id="@+id/VlblPriCaregID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Record primary caregivers name" />
+
+                <!--<Spinner android:id="@+id/spnPriCaregID" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>-->
+
+                <EditText
+                    android:id="@+id/txtPriCaregID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="60" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linePriCaregID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secRthChild"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblRthChild"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M6." />
+
+                <TextView
+                    android:id="@+id/VlblRthChild"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is your relationship to the child/[name]?
+(GIVE ONE RESPONSE, OR WRITE RESPONSE FOR 88)" />
+
+                <Spinner
+                    android:id="@+id/spnRthChild"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineRthChild"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secRthChildOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblRthChildOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblRthChildOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+
+                <EditText
+                    android:id="@+id/txtRthChildOth"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineRthChildOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secReligGroup"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblReligGroup"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M7." />
+
+                <TextView
+                    android:id="@+id/VlblReligGroup"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Which religious group does the primary caregiver belong to?
+IF MORE THAN ONE, MARK OTHER AND SPECIFY
+" />
+
+                <Spinner
+                    android:id="@+id/spnReligGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineReligGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secReligGroupOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblReligGroupOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblReligGroupOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify
+" />
+
+                <EditText
+                    android:id="@+id/txtReligGroupOth"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineReligGroupOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secEthnicGroup"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblEthnicGroup"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M8." />
+
+                <TextView
+                    android:id="@+id/VlblEthnicGroup"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Which ethnic group does the primary caregiver belong to?
+IF MORE THAN ONE, MARK OTHER AND SPECIFY (GIVE RESPONSE ON THE BLANK)" />
+
+               <!-- <EditText
+                    android:id="@+id/txtEthnicGroup"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="150" />-->
+                <Spinner android:id="@+id/spnEthnicGroup" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineEthnicGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <!--<LinearLayout
+                android:id="@+id/secEthnicGroupODkR"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/lblEthnicGroupODkR"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M8." />
+
+                <TextView
+                    android:id="@+id/VlblEthnicGroupODkR"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Which ethnic group does the primary caregiver belong to?
+Other/Don't know/Refused to respond" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpEthnicGroupODkR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoEthnicGroupODkR1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Other" />
+
+                    <RadioButton
+                        android:id="@+id/rdoEthnicGroupODkR2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoEthnicGroupODkR3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineEthnicGroupODkR"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />-->
+
+            <LinearLayout
+                android:id="@+id/secEthnicGroupOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblEthnicGroupOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblEthnicGroupOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+
+                <EditText
+                    android:id="@+id/txtEthnicGroupOth"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineEthnicGroupOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secCrgvEduY"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblCrgvEduY"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M9." />
+
+                <TextView
+                    android:id="@+id/VlblCrgvEduY"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What level of education have completed?" />
+
+                <!--<EditText
+                    android:id="@+id/txtCrgvEduY"
+                    style="@style/customEdit"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="number"
+                    android:maxLength="2" />-->
+                <Spinner
+                    android:id="@+id/spnCrgvEduY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineCrgvEduY"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secCrgvEduYDk"
+                style="@style/rowStyle0" android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblCrgvEduYDk"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblCrgvEduYDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="How many years of education has the primary caregiver completed? - Don't know/Refused to respond" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpCrgvEduYDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoCrgvEduYDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoCrgvEduYDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineCrgvEduYDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secEmpStatus"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblEmpStatus"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M10." />
+
+                <TextView
+                    android:id="@+id/VlblEmpStatus"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is the employment status of the primary caregiver?\n(CIRCLE ONE RESPONSE, OR WRITE RESPONSE FOR 88)
+ONLY INCLUDE THIS QUESTION IF OCCUPATION IS NOT ASKED AS PART OF THE HOUSEHOLD ROSTER" />
+
+                <Spinner
+                    android:id="@+id/spnEmpStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+                <!--<RadioGroup
+                    android:id="@+id/rdogrpEmpStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoEmpStatus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Unemployed/Not working" />
+
+                    <RadioButton
+                        android:id="@+id/rdoEmpStatus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Full-time Employed" />
+
+                    <RadioButton
+                        android:id="@+id/rdoEmpStatus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Part-time Employed" />
+
+                    <RadioButton
+                        android:id="@+id/rdoEmpStatus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Self-time Employed" />
+
+                    <RadioButton
+                        android:id="@+id/rdoEmpStatus5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Other" />
+
+                    <RadioButton
+                        android:id="@+id/rdoEmpStatus6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoEmpStatus7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineEmpStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secEmployStsOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblEmployStsOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblEmployStsOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+
+                <EditText
+                    android:id="@+id/txtEmployStsOth"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineEmployStsOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMainOccu"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMainOccu"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M11." />
+
+                <TextView
+                    android:id="@+id/VlblMainOccu"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What is the main occupation of the primary caregiver?\nMain occupation being the most important income-generating activity
+(CIRCLE ONE RESPONSE, OR WRITE RESPONSE FOR 88)" />
+
+                <Spinner
+                    android:id="@+id/spnMainOccu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+                <!--<EditText
+                    android:id="@+id/txtMainOccu"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMainOccu"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMainOccuDk"
+                style="@style/rowStyle0" android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMainOccuDk"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMainOccuDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other/Don't know/Refused to respond" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpMainOccuDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoMainOccuDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Other" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMainOccuDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Don't know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoMainOccuDk3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to respond" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMainOccuDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secMainOccuOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblMainOccuOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMainOccuOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Others Occupation" />
+
+                <EditText
+                    android:id="@+id/txtMainOccuOth"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMainOccuOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20sp">
+
+                <Button
+                    android:id="@+id/cmdSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/button_style_circle_line"
+                    android:text=" Save -> Continue "
+                    android:textColor="@drawable/button_style_line_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

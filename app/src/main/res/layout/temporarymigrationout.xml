@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:text="Temporary Migration-out"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:id="@+id/secTmpMigrationID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblTmpMigrationID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblTmpMigrationID" android:text="Migration in/out internal ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtTmpMigrationID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineTmpMigrationID" android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHHID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHHID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHHID" android:text="Household ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtHHID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineHHID" android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMemID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMemID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMemID" android:text="Member internal ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMemID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMemID" android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secTmpMigVDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblTmpMigVDate" android:text="1" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblTmpMigVDate" android:text="Visit date" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpTmpMigVDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineTmpMigVDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secTmpMigLeave" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblTmpMigLeave" android:text="3" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblTmpMigLeave" android:text="Did any member of this household leave the household within the last 4 months?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpTmpMigLeave" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTmpMigLeave1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTmpMigLeave2" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTmpMigLeave3" android:text="Dont Know" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTmpMigLeave4" android:text="Refused to Answer " android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineTmpMigLeave" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secTmpMigMemberAway" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblTmpMigMemberAway" android:text="5" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblTmpMigMemberAway" android:text="How long has the member been away?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnTmpMigMemberAway" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineTmpMigMemberAway" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/secMigReason"
+            style="@style/rowStyle0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblMigReason"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/VlblMigReason"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="What was the reason for the migration?" />
+
+            <Spinner
+                android:id="@+id/spnMigReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_weight="0"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineMigReason"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/secMigReasonOth"
+            style="@style/rowStyle0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblMigReasonOth"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/VlblMigReasonOth"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="Other specify" />
+            <AutoCompleteTextView
+                android:id="@+id/txtMigReasonOth"
+                android:ems="10"
+                android:drawableRight="@drawable/close"
+                android:maxLength="100"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                style="@style/customEdit"
+                android:layout_marginRight="10sp"
+                android:maxLines="1"
+                android:completionThreshold="1"
+                android:scrollHorizontally="true"
+                android:dropDownSelector="#D7D7D7"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineMigReasonOth"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#CCCCCC" />
+
+
+        <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="horizontal">
+       	<androidx.appcompat.widget.AppCompatButton android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line"
+       			android:text=" Save -> Continue " android:textColor="@drawable/button_style_line_text_color" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+       </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

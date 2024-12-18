@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <!--        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">-->
+        <!--            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>-->
+        <!--            <TextView android:id="@+id/lblHeading" android:text="Still Birth"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>-->
+        <!--        </LinearLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cmdBack"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@color/pageHeadingBack"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lblHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/cmdBack"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="Still Birth"
+                android:textColor="@color/pageHeading" />
+
+            <TextView
+                android:id="@+id/lblEvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="47"
+                android:textColor="@color/pageHeading"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/secStillBirthID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblStillBirthID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblStillBirthID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Still Birth internal ID" />
+
+                <EditText
+                    android:id="@+id/txtStillBirthID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineStillBirthID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secHHID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblHHID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblHHID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Household ID" />
+
+                <EditText
+                    android:id="@+id/txtHHID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineHHID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secSBMomID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblSBMomID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblSBMomID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Mother ID of the household" />
+
+                <EditText
+                    android:id="@+id/txtSBMomID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBMomID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secSBDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="1." />
+
+                <TextView
+                    android:id="@+id/VlblSBDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the date of still birth?" />
+
+                <EditText
+                    android:id="@+id/dtpSBDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBDateType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBDateType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="2." />
+
+                <TextView
+                    android:id="@+id/VlblSBDateType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Still birth date Type" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBDateType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDateType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Exact" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDateType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Approximate" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDateType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Unknown" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBDateType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBTime"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBTime"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="3." />
+
+                <TextView
+                    android:id="@+id/VlblSBTime"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the time of delivery?" />
+
+                <EditText
+                    android:id="@+id/txtSBTime"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/clocksmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBTime"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBTimeType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBTimeType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="4." />
+
+                <TextView
+                    android:id="@+id/VlblSBTimeType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Still birth Time Type" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBTimeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBTimeType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Exact" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBTimeType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Approximate" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBTimeType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Unknown" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBTimeType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblSBType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="5." />
+
+                <TextView
+                    android:id="@+id/VlblSBType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the type of still birth?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Macerated Still Birth" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Fresh Still Birth" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Still Birth Not Otherwise Specified" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBType4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Dont Know" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBSex"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBSex"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="6." />
+
+                <TextView
+                    android:id="@+id/VlblSBSex"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the sex of still birth?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBSex1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBSex2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBSex3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Indeterminant" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBSex4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Unknown" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBSex"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBPlace"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBPlace"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="7." />
+
+                <TextView
+                    android:id="@+id/VlblSBPlace"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the place of still birth?" />
+
+                <Spinner
+                    android:id="@+id/spnSBPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBPlace"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBPlaceOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBPlaceOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblSBPlaceOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other place specify" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtSBPlaceOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBPlaceOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/seclbl01"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl01"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="8."
+                    android:textColor="@color/form_heading_font_color" />
+
+                <TextView
+                    android:id="@+id/lblHlbl01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Who assisted during delivery?"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBDoctor"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBDoctor"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="A." />
+
+                <TextView
+                    android:id="@+id/VlblSBDoctor"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Doctor" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDoctor1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDoctor2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBDoctor"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBNurse"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBNurse"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B." />
+
+                <TextView
+                    android:id="@+id/VlblSBNurse"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Nurse" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBNurse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBNurse1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBNurse2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBNurse"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBMidwife"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBMidwife"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="C." />
+
+                <TextView
+                    android:id="@+id/VlblSBMidwife"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Midwife/Paramedic" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBMidwife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBMidwife1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBMidwife2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBMidwife"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBTBA"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBTBA"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="D." />
+
+                <TextView
+                    android:id="@+id/VlblSBTBA"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Traditional birth attendant" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBTBA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBTBA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBTBA2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBTBA"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBCHW"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBCHW"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="E." />
+
+                <TextView
+                    android:id="@+id/VlblSBCHW"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Community health worker" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBCHW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBCHW1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBCHW2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBCHW"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBRltv"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBRltv"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="F." />
+
+                <TextView
+                    android:id="@+id/VlblSBRltv"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Relative/friend" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBRltv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBRltv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBRltv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBRltv"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBNAT"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBNAT"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="G." />
+
+                <TextView
+                    android:id="@+id/VlblSBNAT"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="No attendant" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBNAT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBNAT1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBNAT2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBNAT"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="X." />
+
+                <TextView
+                    android:id="@+id/VlblSBOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBOth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBOth1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBOth2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBOthSp"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBOthSp"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblSBOthSp"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtSBOthSp"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBOthSp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBDk"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBDk"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Y." />
+
+                <TextView
+                    android:id="@+id/VlblSBDk"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Dont know" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBDk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDk1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDk2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBDk"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBRfs"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBRfs"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Z." />
+
+                <TextView
+                    android:id="@+id/VlblSBRfs"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Refused to respond" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBRfs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBRfs1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBRfs2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBRfs"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBDelType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBDelType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="9." />
+
+                <TextView
+                    android:id="@+id/VlblSBDelType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the mode of delivery?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpSBDelType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDelType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Assisted Vaginal with Forceps" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDelType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Assisted Vaginal with Vacuum" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDelType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Vaginal (Without Forceps/Vacuum)" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDelType4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="C–Section Before Labor and Delivery" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDelType5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="C–Section During Labor and Delivery" />
+
+                    <RadioButton
+                        android:id="@+id/rdoSBDelType6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Dont Know" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBDelType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secSBVDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBVDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="10." />
+
+                <TextView
+                    android:id="@+id/VlblSBVDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Visit date" />
+
+                <EditText
+                    android:id="@+id/dtpSBVDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBVDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secRnd"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblRnd"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblRnd"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Round number" />
+
+                <EditText
+                    android:id="@+id/txtRnd"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineRnd"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secSBNote"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblSBNote"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblSBNote"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Note" />
+                <!--        <EditText android:id="@+id/txtSBNote" android:maxLength="250" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBNote"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secSBNote1"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblSBNote1"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Note" />
+                <!--            <TextView android:id="@+id/VlblSBNote" android:text="Note" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>-->
+                <EditText
+                    android:id="@+id/txtSBNote"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text|textCapWords"
+                    android:maxLength="250" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineSBNote1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20sp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cmdSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/button_style_circle_line"
+                    android:text=" Save -> Continue "
+                    android:textColor="@drawable/button_style_line_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

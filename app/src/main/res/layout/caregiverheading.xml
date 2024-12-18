@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbars="vertical">
+    <LinearLayout android:id="@+id/secListRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:background="#C2E0EC" android:paddingTop="5px" android:paddingBottom="5px">
+        <TextView android:text="CaregID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChildID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="HHID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="RespName" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="RespID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="IsMem" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="CMemID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PriCaregiver" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WhoPriCaregiver" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WhoPrCaregOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PriCaregID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="RthChild" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="RthChildOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ReligGroup" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ReligGroupOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="EthnicGroup" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="EthnicGroupODkR" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="EthnicGroupOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="CrgvEduY" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="CrgvEduYDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="EmpStatus" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="EmployStsOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MainOccu" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MainOccuDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MainOccuOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+    </LinearLayout>
+ </LinearLayout>

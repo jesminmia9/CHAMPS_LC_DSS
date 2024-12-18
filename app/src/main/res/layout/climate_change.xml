@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:text="Climate Change"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:id="@+id/secHHID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHHID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHHID" android:text="Household ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtHHID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineHHID"  android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateSL" android:visibility="gone"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateSL" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateSL" android:text="Climate Change Serial No" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateSL" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateSL" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateVDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateVDate" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateVDate" android:text="Date of Interview" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpClimateVDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateVDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateVStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateVStatus" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateVStatus" android:text="Visit Status" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimateVStatus" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateVStatus1" android:text="Interview completed" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateVStatus2" android:text="Interview partially completed" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateVStatus3" android:text="Refused" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateVStatus4" android:text="Other" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateVStatus" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateVStatusOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateVStatusOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateVStatusOth" android:text="Other Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateVStatusOth" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateVStatusOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRnd" android:visibility="gone"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRnd" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRnd" android:text="Round No" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtRnd" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineRnd" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblP1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblP1" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblP1" android:text="Part 1 - Impacts of Climate Change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblP1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateChangesNoticed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateChangesNoticed" android:text="Q1." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateChangesNoticed" android:text="Have you noticed any changes in your local environment in the last few years?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimateChangesNoticed" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateChangesNoticed1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateChangesNoticed2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateChangesNoticed" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ2" android:text="Q2." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ2" android:text="If so, what changes have you observed? (Several answers possible)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ2" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateChangesTemp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateChangesTemp" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateChangesTemp" android:text="Rising temperatures" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateChangesTemp" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateChangesTemp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateChangesSeason" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateChangesSeason" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateChangesSeason" android:text="Changes in the seasons (duration, intensity)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateChangesSeason" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateChangesSeason" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateChangesWeather" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateChangesWeather" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateChangesWeather" android:text="Increase in extreme weather events (rain, drought, flooding)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateChangesWeather" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateChangesWeather" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateChangesFlora" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateChangesFlora" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateChangesFlora" android:text="Modification of local flora/fauna" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateChangesFlora" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateChangesFlora" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateChangesOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateChangesOther" android:text="E." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateChangesOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateChangesOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateChangesOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateChangesOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateChangesOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateChangesOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateChangesOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateChangesOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateAffectDailyLife" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateAffectDailyLife" android:text="Q3." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateAffectDailyLife" android:text="How have these changes affected your daily life?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnClimateAffectDailyLife" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateAffectDailyLife" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFlood" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFlood" android:text="Q4." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFlood" android:text="Have you been affected by the floods within the last year?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimateFlood" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateFlood1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateFlood2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFlood" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ5" android:text="Q5." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ5" android:text="What are the losses caused by these floods?  " android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ5" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodHouse" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodHouse" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodHouse" android:text="Destruction of the house" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodHouse" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodHouse" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodWall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodWall" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodWall" android:text="Fallen Wall" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodWall" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodWall" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodMember" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodMember" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodMember" android:text="Death of a member of your household" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodMember" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodMember" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodLivestock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodLivestock" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodLivestock" android:text="Death of livestock’s" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodLivestock" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodLivestock" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodJobLess" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodJobLess" android:text="E." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodJobLess" android:text="Job loss" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodJobLess" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodJobLess" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodEnergy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodEnergy" android:text="F." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodEnergy" android:text="Access to energy" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodEnergy" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodEnergy" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodToilets" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodToilets" android:text="G." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodToilets" android:text="Destruction of toilets" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodToilets" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodToilets" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodHealth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodHealth" android:text="H." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodHealth" android:text="Health problems" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodHealth" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodHealth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodMigration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodMigration" android:text="I." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodMigration" android:text="Migration" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodMigration" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodMigration" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodOther" android:text="J." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateFloodOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateFloodOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateFloodOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateFloodOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateFloodOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateFloodOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHighHeat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHighHeat" android:text="Q6." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHighHeat" android:text="Were you affected by an unusually high heat in the last year?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimateHighHeat" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateHighHeat1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateHighHeat2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHighHeat" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ7" android:text="Q7." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ7" android:text="What are the losses caused by this unusually high heat?  " android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ7" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHighHeatMemberDth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHighHeatMemberDth" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHighHeatMemberDth" android:text="Death of a member of your household" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHighHeatMemberDth" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHighHeatMemberDth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHighHeatHealth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHighHeatHealth" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHighHeatHealth" android:text="health problems" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHighHeatHealth" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHighHeatHealth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHighHeatMemberIll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHighHeatMemberIll" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHighHeatMemberIll" android:text="Illness of a member of your household" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHighHeatMemberIll" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHighHeatMemberIll" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHighHeatPetDth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHighHeatPetDth" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHighHeatPetDth" android:text="Death of pets" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHighHeatPetDth" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHighHeatPetDth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHighHeatOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHighHeatOther" android:text="J." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHighHeatOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHighHeatOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHighHeatOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHighHeatOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHighHeatOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHighHeatOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateHighHeatOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHighHeatOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ7a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ7a" android:text="Q7a." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ7a" android:text="What type of health problems?" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ7a" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemSleep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemSleep" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemSleep" android:text=" Lack of sleep" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHealthProblemSleep" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemSleep" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemDizzy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemDizzy" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemDizzy" android:text=" Dizziness" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHealthProblemDizzy" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemDizzy" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemLowBlood" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemLowBlood" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemLowBlood" android:text=" Low blood pressure" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHealthProblemLowBlood" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemLowBlood" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemHighBlood" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemHighBlood" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemHighBlood" android:text=" High blood pressure" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHealthProblemHighBlood" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemHighBlood" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemStroke" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemStroke" android:text="E." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemStroke" android:text=" Stroke" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHealthProblemStroke" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemStroke" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemFever" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemFever" android:text="F." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemFever" android:text=" Fever" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHealthProblemFever" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemFever" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemOther" android:text="G." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateHealthProblemOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateHealthProblemOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHealthProblemPeriod" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHealthProblemPeriod" android:text="Q7c." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHealthProblemPeriod" android:text="What is the period of this disease?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnClimateHealthProblemPeriod" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHealthProblemPeriod" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ7b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ7b" android:text="Q7b." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ7b" android:text="What type of illness?" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ7b" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessMalaria" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessMalaria" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessMalaria" android:text=" Malaria" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessMalaria" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessMalaria" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessPneumonia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessPneumonia" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessPneumonia" android:text=" RA/Pneumonia" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessPneumonia" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessPneumonia" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessMeasles" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessMeasles" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessMeasles" android:text=" Measles" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessMeasles" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessMeasles" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessPertussis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessPertussis" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessPertussis" android:text=" Pertussis" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessPertussis" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessPertussis" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessDiarrhea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessDiarrhea" android:text="E." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessDiarrhea" android:text=" Diarrhea" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessDiarrhea" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessDiarrhea" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessFood" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessFood" android:text="F." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessFood" android:text=" Lack of food" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessFood" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessFood" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessTyphoid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessTyphoid" android:text="G." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessTyphoid" android:text=" Typhoid" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessTyphoid" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessTyphoid" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessCough" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessCough" android:text="H." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessCough" android:text=" Cough and cold" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessCough" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessCough" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessCholera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessCholera" android:text="I." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessCholera" android:text=" Cholera" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessCholera" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessCholera" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessOther" android:text="J." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateIllnessOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateIllnessOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateIllnessPeriod" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateIllnessPeriod" android:text="Q7d." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateIllnessPeriod" android:text="What is the period of this disease?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnClimateIllnessPeriod" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateIllnessPeriod" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblP2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblP2" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblP2" android:text="Part 2 - Knowledge of Climate Change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblP2" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateHeard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateHeard" android:text="Q8." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateHeard" android:text="Have you heard of climate change?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimateHeard" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateHeard1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateHeard2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateHeard" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ9" android:text="Q9." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ9" android:text="Where do you get your information on climate change from? (Several answers possible)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ9" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateInfoMedia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateInfoMedia" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateInfoMedia" android:text="Media (TV, radio, newspapers)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateInfoMedia" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateInfoMedia" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateInfoInternet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateInfoInternet" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateInfoInternet" android:text="Internet (websites, social networks)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateInfoInternet" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateInfoInternet" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateInfoEducation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateInfoEducation" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateInfoEducation" android:text="Education (school, university)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateInfoEducation" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateInfoEducation" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateInfoFnF" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateInfoFnF" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateInfoFnF" android:text="Friends/family" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateInfoFnF" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateInfoFnF" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateInfoOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateInfoOther" android:text="E." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateInfoOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateInfoOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateInfoOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateInfoOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateInfoOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateInfoOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateInfoOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateInfoOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateKnRate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateKnRate" android:text="Q10." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateKnRate" android:text="On a scale of 1 to 5, how would you rate your knowledge of climate change?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnClimateKnRate" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateKnRate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblP3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblP3" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblP3" android:text="Part 3 - Risk Perception" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblP3" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimatethreat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimatethreat" android:text="Q11." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimatethreat" android:text="Do you think climate change poses a serious threat to the planet?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimatethreat" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimatethreat1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimatethreat2" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimatethreat3" android:text="Dont Know" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimatethreat" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateWorried" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateWorried" android:text="Q12." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateWorried" android:text="How worried are you about climate change?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnClimateWorried" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateWorried" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ13" android:text="Q13." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ13" android:text="What aspects of climate change are you most concerned about? (Several answers possible)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ13" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernTemp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernTemp" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernTemp" android:text="Rising temperatures" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernTemp" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernTemp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernEvent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernEvent" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernEvent" android:text="Increase in extreme weather events (storms, floods)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernEvent" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernEvent" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernPolarIce" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernPolarIce" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernPolarIce" android:text="Melting of polar ice" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernPolarIce" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernPolarIce" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernSeaLevel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernSeaLevel" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernSeaLevel" android:text="Rising sea levels" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernSeaLevel" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernSeaLevel" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernBiodiversity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernBiodiversity" android:text="E." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernBiodiversity" android:text="Loss of biodiversity" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernBiodiversity" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernBiodiversity" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernDrying" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernDrying" android:text="F." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernDrying" android:text=" Drying up of rivers and streams" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernDrying" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernDrying" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernRising" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernRising" android:text="G." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernRising" android:text=" Rising levels of rivers and streams" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernRising" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernRising" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernDrought" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernDrought" android:text="H." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernDrought" android:text=" Drought" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernDrought" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernDrought" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernDesert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernDesert" android:text="I." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernDesert" android:text=" Desert encroachment" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernDesert" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernDesert" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernErosin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernErosin" android:text="J." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernErosin" android:text=" Erosion" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernErosin" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernErosin" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernOther" android:text="K." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateConcernOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateConcernOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateConcernOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateConcernOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateConcernOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateConcernOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateComDoing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateComDoing" android:text="Q14." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateComDoing" android:text="Do you think your community is doing enough to address climate change?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimateComDoing" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateComDoing1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateComDoing2" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateComDoing3" android:text="Dont Know" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateComDoing" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblP4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblP4" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblP4" android:text="Part 4 - Behavior and Action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblP4" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateReduceImpact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateReduceImpact" android:text="Q15." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateReduceImpact" android:text="Have you changed your consumption habits to reduce your impact on the environment?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimateReduceImpact" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateReduceImpact1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateReduceImpact2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateReduceImpact" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ16" android:text="Q16." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ16" android:text="If so, what actions have you put in place? (Several answers possible)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ16" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateActionsPlastics" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateActionsPlastics" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateActionsPlastics" android:text="Reduction of the use of plastics" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateActionsPlastics" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateActionsPlastics" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateActionsTransport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateActionsTransport" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateActionsTransport" android:text="Use of environmentally friendly means of transportation (bicycle, public transit)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateActionsTransport" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateActionsTransport" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateActionsFoods" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateActionsFoods" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateActionsFoods" android:text="Consumption of local and seasonal foods" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateActionsFoods" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateActionsFoods" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateActionsHome" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateActionsHome" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateActionsHome" android:text="Reduced energy consumption in the home" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateActionsHome" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateActionsHome" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateActionsOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateActionsOther" android:text="E." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateActionsOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateActionsOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateActionsOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateActionsOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateActionsOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateActionsOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateActionsOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateActionsOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateRenewableEnergy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateRenewableEnergy" android:text="Q17." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateRenewableEnergy" android:text="What is your perception of renewable energy source (e.g. Solar and wind)?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpClimateRenewableEnergy" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateRenewableEnergy1" android:text="Not interested" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateRenewableEnergy2" android:text="Interested" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoClimateRenewableEnergy3" android:text="Interested but expensive" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateRenewableEnergy" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ18" android:text="Q18." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ18" android:text="What obstacles do you face in adopting more ecological behaviors? (Several answers possible)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ18" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateObstaclesCost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateObstaclesCost" android:text="A." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateObstaclesCost" android:text="High cost" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateObstaclesCost" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateObstaclesCost" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateObstaclesLackInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateObstaclesLackInfo" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateObstaclesLackInfo" android:text="Lack of information" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateObstaclesLackInfo" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateObstaclesLackInfo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout android:id="@+id/secClimateObstaclesAccess" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateObstaclesAccess" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateObstaclesAccess" android:text="Lack of access to eco-friendly alternatives" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateObstaclesAccess" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateObstaclesAccess" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateObstaclesHabit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateObstaclesHabit" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateObstaclesHabit" android:text="Habits that are difficult to change" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateObstaclesHabit" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateObstaclesHabit" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateObstaclesOther" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateObstaclesOther" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateObstaclesOther" android:text="Other" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkClimateObstaclesOther" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineClimateObstaclesOther" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateObstaclesOtherSp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateObstaclesOtherSp" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateObstaclesOtherSp" android:text="Other (specify):" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateObstaclesOtherSp" android:maxLength="500" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateObstaclesOtherSp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secClimateNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblClimateNote" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblClimateNote" android:text="Note" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtClimateNote" android:maxLength="300" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineClimateNote" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+       <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="horizontal">
+       	<androidx.appcompat.widget.AppCompatButton android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line"
+       			android:text=" Save -> Continue " android:textColor="@drawable/button_style_line_text_color" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+       </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

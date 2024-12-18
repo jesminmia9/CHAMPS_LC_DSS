@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:text="Member Move"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:id="@+id/secMemID" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMemID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMemID" android:text="Member ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMemID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMemID" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHHID" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHHID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHHID" android:text="Household ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtHHID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineHHID" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secActive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblActive" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblActive" android:text="Is the member extension active" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtActive" android:maxLength="50" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineActive" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDSSID" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDSSID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDSSID" android:text="Permanent Member DSS ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtDSSID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineDSSID" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMEnType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMEnType" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMEnType" android:text="Member Entry Type" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMEnType" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMEnType" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMEnDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMEnDate" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMEnDate" android:text="Member Entry Date" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpMEnDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMEnDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMExType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMExType" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMExType" android:text="Member Exit Type" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMExType" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMExType" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMExDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMExDate" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMExDate" android:text="Member Exit Date" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpMExDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMExDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRnd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRnd" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRnd" android:text="Round" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtRnd" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineRnd" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMemNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMemNote" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMemNote" android:text="Member Note" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMemNote" android:maxLength="300" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMemNote" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+       <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="horizontal">
+       	<androidx.appcompat.widget.AppCompatButton android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line"
+       			android:text=" Save -> Continue " android:textColor="@drawable/button_style_line_text_color" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+       </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:text="Socio-Economic Status"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:id="@+id/seclblH1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblH1" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblH1" android:text="INTERVIEWER: Now, please allow me to ask you about the materials of your homestead/dwelling/residence and assets that you own" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblH1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHHID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHHID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHHID" android:text="Household ID" android:layout_width="160sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtHHID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineHHID" android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSESNo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSESNo" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSESNo" android:text="SES No" android:layout_width="160sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtSESNo" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSESNo"  android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSESVDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSESVDate" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSESVDate" android:text="Date of Interview" android:layout_width="160sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpSESVDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSESVDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSESVStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSESVStatus" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSESVStatus" android:text="Visit Status" android:layout_width="160sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpSESVStatus" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSESVStatus1" android:text="Interview completed" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSESVStatus2" android:text="Interview partially completed" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSESVStatus3" android:text="Refused" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSESVStatus4" android:text="Other" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineSESVStatus" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSESVStatusOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSESVStatusOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSESVStatusOth" android:text="Other Specify" android:layout_width="160sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <!--<EditText android:id="@+id/txtSESVStatusOth" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>-->
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/txtSESVStatusOth"
+            style="@style/customEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:completionThreshold="1"
+            android:drawableRight="@drawable/close"
+            android:dropDownSelector="#D7D7D7"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:scrollHorizontally="true" />
+
+
+    </LinearLayout>
+    <View android:id="@+id/lineSESVStatusOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRnd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRnd" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRnd" android:text="Round No" android:layout_width="160sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtRnd" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineRnd" android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secWSDrink" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblWSDrink" android:text="H1." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblWSDrink" android:text="What is the main source of drinking water for members of your household ?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnWSDrink" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineWSDrink" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secWSDrinkOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblWSDrinkOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblWSDrinkOth" android:text="Other Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtWSDrinkOth" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineWSDrinkOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secToilet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblToilet" android:text="H2" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblToilet" android:text="What kind of main toilet facility do members of your household usually use ? (If ‘Flush’, Or ‘Pour Flush’, Probe: Where Does It Flush To ?) " android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnToilet" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineToilet" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secToiletOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblToiletOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblToiletOth" android:text="Other Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtToiletOth" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineToiletOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secToiletShrd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblToiletShrd" android:text="H2.1" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblToiletShrd" android:text="Do you share this toilet facility with other households?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpToiletShrd" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoToiletShrd1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoToiletShrd2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineToiletShrd" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secToiletUseNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblToiletUseNo" android:text="H2.2" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblToiletUseNo" android:text="Including your own household, how many households use this toilet facility? No. Of Households (If Less Than 10)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+         <EditText android:id="@+id/txtToiletUseNo" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineToiletUseNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secToiletUseNoDk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblToiletUseNoDk" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblToiletUseNoDk" android:text="" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpToiletUseNoDk" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoToiletUseNoDk1" android:text="10 Or More Households" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoToiletUseNoDk2" android:text="Don't Know" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineToiletUseNoDk" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secToiletLoc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblToiletLoc" android:text="H2.3" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblToiletLoc" android:text="Where is this toilet facility located ?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpToiletLoc" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoToiletLoc1" android:text="In own dwelling" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoToiletLoc2" android:text="In own yard/plot" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoToiletLoc3" android:text="Else where" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineToiletLoc" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCookDvc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCookDvc" android:text="H3." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCookDvc" android:text="What device does this household use most of the time for cooking food, making tea/coffee, or boiling drinking water ? " android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnCookDvc" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineCookDvc" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCookDvcOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCookDvcOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCookDvcOth" android:text="Other Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtCookDvcOth" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineCookDvcOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCookFuel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCookFuel" android:text="H4." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCookFuel" android:text="When cooking, what type of fuel or energy source does this household use most of the time for cooking food, making tea/coffee, or boiling drinking water?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnCookFuel" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineCookFuel" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCookFuelOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCookFuelOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCookFuelOth" android:text="Other fuel Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtCookFuelOth" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineCookFuelOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCookPlc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCookPlc" android:text="H5." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCookPlc" android:text="Where is the cooking done most of the time?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnCookPlc" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineCookPlc" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCookPlcOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCookPlcOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCookPlcOth" android:text="Other Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtCookPlcOth" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineCookPlcOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secFloor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblFloor" android:text="H6." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblFloor" android:text="What is the main material of the floor of your homestead/dwelling/residence? (“Main Material” Is The Material That Covers The Largest Amount Of Floor Space)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnFloor" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineFloor" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secFloorOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblFloorOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblFloorOth" android:text="Other Floor Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtFloorOth" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineFloorOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRoof" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRoof" android:text="H7." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRoof" android:text="What is the main material of the roof of your homestead/dwelling/residence ?  (“Main Material” Is The Material That Covers The Largest Amount Of Roof Space)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnRoof" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineRoof" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRoofOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRoofOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRoofOth" android:text="Other Roof Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtRoofOth" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineRoofOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secWall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblWall" android:text="H8." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblWall" android:text="What is the main material of the exterior walls of the house that is your main homestead/dwelling/residence? (“Main Material” Is The Material That Covers The Largest Amount Of Exterior Wall Space)
+" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnWall" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineWall" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secWallOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblWallOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblWallOth" android:text="Other Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtWallOth" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineWallOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRoomSleep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRoomSleep" android:text="H9." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRoomSleep" android:text="How many rooms in your homestead/dwelling/residence are used for sleeping ?  (Write The Number On The Blank) (A Room Divided By A Curtain Counts As One Room)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+         <EditText android:id="@+id/txtRoomSleep" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineRoomSleep" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRoomSleepDk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRoomSleepDk" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRoomSleepDk" android:text="How many rooms in your homestead/dwelling/residence are used for sleeping?-Don’t know/Refused to respond" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpRoomSleepDk" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoRoomSleepDk1" android:text="Don't know" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoRoomSleepDk2" android:text="Refused to respond" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineRoomSleepDk" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHomesteadAny" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHomesteadAny" android:text="H10." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHomesteadAny" android:text="Does your household own any homestead?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpHomesteadAny" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoHomesteadAny1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoHomesteadAny2" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoHomesteadAny3" android:text="Don't know" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoHomesteadAny4" android:text="Refused to respond" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineHomesteadAny" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOthLand" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOthLand" android:text="H11." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOthLand" android:text="Does your household own any agricultural land?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpOthLand" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoOthLand1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoOthLand2" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoOthLand3" android:text="Don't know" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoOthLand4" android:text="Refused to respond" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineOthLand" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/seclblH121"
+            style="@style/rowHeading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/VlbllblH121"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/form_heading_font_color"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lblHlblH121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Interviewer Should Ask About Household Ownership For Each Item Listed Below. Tick Item(S) That Apply (“Yes”)."
+                android:textColor="@color/form_heading_font_color" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/seclblH12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblH12" android:text="H12." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblH12" android:text="Household assets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblH12" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <View android:id="@+id/linelblH121" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secElectricity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblElectricity" android:text="1." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblElectricity" android:text="Electricity" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpElectricity" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoElectricity1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoElectricity2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineElectricity" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHeater" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHeater" android:text="2." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHeater" android:text="Heater" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpHeater" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoHeater1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoHeater2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineHeater" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secAC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblAC" android:text="3." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblAC" android:text="Air conditioner" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpAC" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoAC1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoAC2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineAC" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secElecFan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblElecFan" android:text="4." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblElecFan" android:text="Electric fan" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpElecFan" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoElecFan1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoElecFan2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineElecFan" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secLantern" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblLantern" android:text="5." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblLantern" android:text="Kerosene lantern" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpLantern" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLantern1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLantern2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineLantern" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secLamp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblLamp" android:text="6." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblLamp" android:text="Pressure lamp" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpLamp" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLamp1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLamp2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineLamp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMatt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMatt" android:text="7." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMatt" android:text="Mattress" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpMatt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMatt1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMatt2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineMatt" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secBed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblBed" android:text="8." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblBed" android:text="Bed" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpBed" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBed1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBed2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineBed" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secChair" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblChair" android:text="9." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblChair" android:text="Chair" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpChair" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChair1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChair2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineChair" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSofa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSofa" android:text="10." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSofa" android:text="Sofa" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpSofa" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSofa1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSofa2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineSofa" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secTables" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblTables" android:text="11." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblTables" android:text="Table" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpTables" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTables1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTables2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineTables" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secWatch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblWatch" android:text="12." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblWatch" android:text="Watch or clock" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpWatch" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoWatch1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoWatch2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineWatch" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secWMachine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblWMachine" android:text="13." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblWMachine" android:text="Washing Machine" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpWMachine" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoWMachine1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoWMachine2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineWMachine" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secIron" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblIron" android:text="14." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblIron" android:text="Electric iron" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpIron" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoIron1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoIron2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineIron" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secBooth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblBooth" android:text="15." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblBooth" android:text="Business booth" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpBooth" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBooth1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBooth2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineBooth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSMachine" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSMachine" android:text="16." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSMachine" android:text="Sewing machine" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpSMachine" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSMachine1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSMachine2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineSMachine" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secGenerator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblGenerator" android:text="17." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblGenerator" android:text="Power generator" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpGenerator" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGenerator1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGenerator2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineGenerator" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMosquito" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMosquito" android:text="17.1." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMosquito" android:text="Mosquito bed net" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpMosquito" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMosquito1" android:text="No" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMosquito2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineMosquito" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblH12a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblH12a" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblH12a" android:text="Communication asset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblH12a" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secInternet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblInternet" android:text="18." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblInternet" android:text="Internet/Wi-Fi at home" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpInternet" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoInternet1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoInternet2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineInternet" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSatellite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSatellite" android:text="19." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSatellite" android:text="Satellite decoder" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpSatellite" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSatellite1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSatellite2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineSatellite" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secLandline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblLandline" android:text="20." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblLandline" android:text="Landline telephone" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpLandline" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLandline1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoLandline2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineLandline" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCellphone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCellphone" android:text="21." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCellphone" android:text="Cellphone" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpCellphone" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCellphone1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCellphone2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineCellphone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secTV" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblTV" android:text="22." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblTV" android:text="TV" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpTV" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTV1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTV2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineTV" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRadio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRadio" android:text="23." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRadio" android:text="Radio" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpRadio" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoRadio1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoRadio2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineRadio" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDVD" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDVD" android:text="24." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDVD" android:text="DVD/CD player" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpDVD" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDVD1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDVD2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineDVD" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblVideo" android:text="25." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblVideo" android:text="Video player" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpVideo" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoVideo1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoVideo2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineVideo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secComputer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblComputer" android:text="26." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblComputer" android:text="Computer" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpComputer" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoComputer1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoComputer2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineComputer" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCable" android:text="27." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCable" android:text="Cable connection" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpCable" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCable1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCable2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineCable" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblH12b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblH12b" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblH12b" android:text="Nutrition asset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblH12b" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMicrowave" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMicrowave" android:text="28." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMicrowave" android:text="Microwave oven" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpMicrowave" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMicrowave1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMicrowave2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineMicrowave" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secGeyser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblGeyser" android:text="29." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblGeyser" android:text="Geyser for hot water" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpGeyser" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGeyser1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGeyser2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineGeyser" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secGrill" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblGrill" android:text="30." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblGrill" android:text="Electric grill/Mitad" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpGrill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGrill1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGrill2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineGrill" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secFridge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblFridge" android:text="31." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblFridge" android:text="Refrigerator" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpFridge" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoFridge1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoFridge2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineFridge" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDeepFreezer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDeepFreezer" android:text="32." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDeepFreezer" android:text="Freezer/deep freezer" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpDeepFreezer" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDeepFreezer1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDeepFreezer2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineDeepFreezer" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secStove" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblStove" android:text="33." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblStove" android:text="Stove" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpStove" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoStove1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoStove2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineStove" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secBlender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblBlender" android:text="33.1." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblBlender" android:text="Blender" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpBlender" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBlender1" android:text="No" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBlender2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineBlender" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblH12c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblH12c" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblH12c" android:text="Transportation asset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblH12c" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secBike" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblBike" android:text="34." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblBike" android:text="Bike" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpBike" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBike1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBike2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineBike" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMotorcycle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMotorcycle" android:text="35." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMotorcycle" android:text="Motorcycle/moped/scooter" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpMotorcycle" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMotorcycle1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMotorcycle2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineMotorcycle" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCar" android:text="36." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCar" android:text="Car" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpCar" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCar1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCar2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineCar" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRickshaw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRickshaw" android:text="37." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRickshaw" android:text="Rickshaw/Van" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpRickshaw" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoRickshaw1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoRickshaw2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineRickshaw" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCart" android:text="38." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCart" android:text="Animal drawn cart" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpCart" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCart1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCart2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineCart" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCanoe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCanoe" android:text="39." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCanoe" android:text="Canoe/fishing boat" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpCanoe" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCanoe1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCanoe2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineCanoe" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secBus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblBus" android:text="40." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblBus" android:text="Bus/truck" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpBus" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBus1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBus2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineBus" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblH12d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblH12d" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblH12d" android:text="Agriculture asset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblH12d" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secTractor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblTractor" android:text="41." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblTractor" android:text="Tractor" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpTractor" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTractor1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoTractor2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineTractor" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secPlow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblPlow" android:text="42." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblPlow" android:text="Plow/plough" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpPlow" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPlow1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPlow2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/linePlow" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDuck" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDuck" android:text="43." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDuck" android:text="Duck" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpDuck" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDuck1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDuck2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineDuck" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCow" android:text="44." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCow" android:text="Cow" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpCow" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCow1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCow2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineCow" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSheep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSheep" android:text="45." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSheep" android:text="Sheep" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpSheep" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSheep1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSheep2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineSheep" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secGoat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblGoat" android:text="46." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblGoat" android:text="Goat" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpGoat" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGoat1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoGoat2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineGoat" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secChicken" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblChicken" android:text="47." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblChicken" android:text="Chicken" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpChicken" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChicken1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoChicken2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineChicken" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDonkey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDonkey" android:text="48." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDonkey" android:text="Donkey/mule/ass" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpDonkey" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDonkey1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDonkey2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineDonkey" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHorse" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHorse" android:text="49." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHorse" android:text="Horse" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpHorse" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoHorse1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoHorse2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineHorse" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secPig" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblPig" android:text="50." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblPig" android:text="Pig" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpPig" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPig1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPig2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/linePig" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOtherAsset" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOtherAsset" android:text="51." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOtherAsset" android:text="Other Asset" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpOtherAsset" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoOtherAsset1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoOtherAsset2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineOtherAsset" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOtherAsset1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOtherAsset1" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOtherAsset1" android:text="Other Asset-1" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtOtherAsset1" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineOtherAsset1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOtherAsset2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOtherAsset2" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOtherAsset2" android:text="Other Asset-2" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtOtherAsset2" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineOtherAsset2" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOtherAsset3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOtherAsset3" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOtherAsset3" android:text="Other Asset-3" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtOtherAsset3" android:ems="10" android:drawableRight="@drawable/close" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineOtherAsset3" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout android:id="@+id/secSESNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+    <TextView android:id="@+id/lblSESNote" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/VlblSESNote" android:text="Note" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+    <EditText android:id="@+id/txtSESNote" android:maxLength="300" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSESNote" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+       <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="horizontal">
+       	<androidx.appcompat.widget.AppCompatButton android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line"
+       			android:text=" Save -> Continue " android:textColor="@drawable/button_style_line_text_color" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+       </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

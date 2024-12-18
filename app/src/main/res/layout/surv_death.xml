@@ -1,0 +1,2960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/cmdBack"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@color/pageHeadingBack"
+                android:src="@drawable/back" />
+            <TextView
+                android:id="@+id/lblHeading"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="-56dp"
+                android:text="Death"
+                android:textAlignment="center"
+                android:textColor="@color/pageHeading"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/secDeathID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDeathID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDeathID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Internal death ID" />
+
+                <EditText
+                    android:id="@+id/txtDeathID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDeathID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secHHID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblHHID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblHHID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Household ID" />
+
+                <EditText
+                    android:id="@+id/txtHHID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineHHID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secMemID"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblMemID"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblMemID"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Member internal ID" />
+
+                <EditText
+                    android:id="@+id/txtMemID"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="40" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineMemID"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDthDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="6" />
+
+                <TextView
+                    android:id="@+id/VlblDthDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="When did he/she die? (Day /Month/Year)
+" />
+
+                <EditText
+                    android:id="@+id/dtpDthDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthDateType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthDateType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthDateType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Death Date Type" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpDthDateType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoDthDateType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Exact" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthDateType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Approximate" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthDateType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Unknow" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthDateType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthTime"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthTime"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="6a" />
+
+                <TextView
+                    android:id="@+id/VlblDthTime"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the time of death?" />
+
+                <EditText
+                    android:id="@+id/txtDthTime"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/clocksmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthTime"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthTimeType"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthTimeType"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthTimeType"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Death Time Type" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpDthTimeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoDthTimeType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Exact" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthTimeType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Approximate" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthTimeType3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Unknown" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthTimeType"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthPlace"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthPlace"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/VlblDthPlace"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="What was the place of death?" />
+
+                <Spinner
+                    android:id="@+id/spnDthPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthPlace"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthPlaceOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthPlaceOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthPlaceOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other specify" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtDthPlaceOth"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthPlaceOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+            <LinearLayout android:id="@+id/secDthAdrsState" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+            <TextView android:id="@+id/lblDthAdrsState" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/VlblDthAdrsState" android:text="Where the person died?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+            <RadioGroup android:id="@+id/rdogrpDthAdrsState" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDthAdrsState1" android:text="Inside state" android:paddingLeft="5dp"/>
+                <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDthAdrsState2" android:text="Outside state" android:paddingLeft="5dp"/>
+            </RadioGroup>
+        </LinearLayout>
+    <View android:id="@+id/lineDthAdrsState" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout
+                android:id="@+id/secDthPlaceFacility"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDthPlaceFacility"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthPlaceFacility"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="If died in health facility, then what is the name of health facility?" />
+
+                <EditText
+                    android:id="@+id/txtDthPlaceFacility"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthPlaceFacility"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/seclbl01"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl01"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblHlbl01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Death Place Address
+"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthAdrsAL1"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthAdrsAL1"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="a." />
+
+                <TextView
+                    android:id="@+id/VlblDthAdrsAL1"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Admin Level 1" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtDthAdrsAL1"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthAdrsAL1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthAdrsAL2"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthAdrsAL2"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="b." />
+
+                <TextView
+                    android:id="@+id/VlblDthAdrsAL2"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Admin Level 2" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtDthAdrsAL2"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthAdrsAL2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthAdrsAL3"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthAdrsAL3"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="c." />
+
+                <TextView
+                    android:id="@+id/VlblDthAdrsAL3"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Admin Level 3" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtDthAdrsAL3"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthAdrsAL3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthAdrsAL4"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthAdrsAL4"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="d." />
+
+                <TextView
+                    android:id="@+id/VlblDthAdrsAL4"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Admin Level 4" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtDthAdrsAL4"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthAdrsAL4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthAdrsAL5"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthAdrsAL5"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="e." />
+
+                <TextView
+                    android:id="@+id/VlblDthAdrsAL5"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Admin Level 5" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtDthAdrsAL5"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:completionThreshold="1"
+                    android:drawableRight="@drawable/close"
+                    android:dropDownSelector="#D7D7D7"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthAdrsAL5"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+
+            <LinearLayout
+                android:id="@+id/secDthSick"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDthSick"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthSick"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Was s/he sick? " />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpDthSick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdoDthSick1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No " />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthSick2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthSick"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/secDthCertificate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthCertificate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthCertificate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Source of Cause of death" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpDthCertificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoDthCertificate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Death Certificate" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthCertificate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Family members or others" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthCertificate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/seclbl02"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Vlbllbl02"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblHlbl02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8. What was/were the cause(s) of death of the deceased?"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl02"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseA"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseA"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="A." />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseA"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Vomiting" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseA"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseA"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseB"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseB"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseB"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Prematurity" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseB"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseB"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseC"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseC"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="C" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseC"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Poisoning" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseC"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseC"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseD"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseD"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="D" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseD"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Malaria" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseD"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseD"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseE"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseE"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="E" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseE"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="ARI/pneumonia" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseE"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseE"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseF"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseF"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseF"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Measles" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseF"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseF"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseG"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseG"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="G" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseG"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Whooping cough" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseG"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseG"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseH"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseH"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="H" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseH"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Diarrhea" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseH"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseH"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseI"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseI"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="I" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseI"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Lack of food" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseI"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseI"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseJ"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseJ"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="J" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseJ"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="TB" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseJ"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseJ"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseK"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseK"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="K" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseK"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Sudden death" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseK"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseK"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseL"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseL"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="L" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseL"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Tetanus" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseL"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseL"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseM"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseM"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseM"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Jaundice" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseM"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseM"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseN"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseN"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="N" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseN"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Pregnancy/childbirth" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseN"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseN"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseO"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseO"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseO"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Suicide" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseO"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseO"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseP"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseP"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="P" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseP"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="HIV/AIDS" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseP"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseP"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseQ"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseQ"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Q" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseQ"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Cancer" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseQ"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseQ"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseR"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseR"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="R" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseR"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Accidents" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseR"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseR"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseS"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseS"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="S" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseS"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Drowning" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseS"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseS"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseT"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseT"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="T" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseT"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Typhoid" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseT"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseT"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseX"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseX"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="X" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseX"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other (Specify)" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseX"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseX"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secDthCauseOth"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthCauseOth"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthCauseOth"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Specify others" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtDthCauseOth"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthCauseOth"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseY"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseY"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Y" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseY"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseY"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseY"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseZ"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseZ"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Z" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseZ"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Refused to Answer" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseZ"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseZ"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+
+
+            <LinearLayout
+                android:id="@+id/secDthHCProf"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDthHCProf"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthHCProf"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Were you told by a health care professional what the cause of death was for the deceased?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpDthHCProf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoDthHCProf1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthHCProf2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthHCProf3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Dont Know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthHCProf4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to Answer" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthHCProf"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/seclbl03"
+                style="@style/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/Vlbllbl03"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/form_heading_font_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lblHlbl03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What was the causes of death stated by the health professional"
+                    android:textColor="@color/form_heading_font_color" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linelbl03"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfA"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfA"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="A" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfA"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Vomiting" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfA"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfA"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfB"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfB"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="B" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfB"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Prematurity" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfB"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfB"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfC"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfC"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="C" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfC"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Poisoning" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfC"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfC"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfD"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfD"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="D" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfD"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Malaria" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfD"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfD"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfE"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfE"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="E" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfE"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="ARI/pneumonia" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfE"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfE"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfF"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfF"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfF"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Measles" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfF"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfF"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfG"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfG"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="G" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfG"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Whooping cough" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfG"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfG"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfH"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfH"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="H" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfH"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Diarrhea" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfH"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfH"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfI"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfI"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="I" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfI"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Lack of food" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfI"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfI"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfJ"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfJ"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="J" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfJ"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="TB" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfJ"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfJ"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfK"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfK"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="K" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfK"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Sudden death" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfK"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfK"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfL"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfL"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="L" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfL"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Tetanus" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfL"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfL"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfM"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfM"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="M" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfM"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Jaundice" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfM"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfM"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfN"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfN"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="N" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfN"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Pregnancy/childbirth" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfN"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfN"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfO"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfO"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfO"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Suicide" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfO"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfO"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfP"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfP"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="P" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfP"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="HIV/AIDS" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfP"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfP"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfQ"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfQ"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Q" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfQ"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Cancer" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfQ"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfQ"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfR"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfR"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="R" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfR"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Accidents" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfR"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfR"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfS"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfS"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="S" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfS"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Drowning" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfS"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfS"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfT"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfT"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="T" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfT"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Typhoid" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfT"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfT"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfX"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfX"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="X" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfX"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Other (Specify)" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfX"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfX"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfY"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfY"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Y" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfY"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Don't know" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfY"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfY"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secchkDthCauseProfZ"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblchkDthCauseProfZ"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Z" />
+
+                <TextView
+                    android:id="@+id/VlblchkDthCauseProfZ"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Refused to Answer" />
+
+                <CheckBox
+                    android:id="@+id/chkchkDthCauseProfZ"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linechkDthCauseProfZ"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDthCauseOthProf"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDthCauseOthProf"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthCauseOthProf"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Specify others" />
+                <AutoCompleteTextView
+                    android:id="@+id/txtDthCauseOthProf"
+                    android:ems="10"
+                    android:drawableRight="@drawable/close"
+                    android:maxLength="100"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    style="@style/customEdit"
+                    android:layout_marginRight="10sp"
+                    android:maxLines="1"
+                    android:completionThreshold="1"
+                    android:scrollHorizontally="true"
+                    android:dropDownSelector="#D7D7D7"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthCauseOthProf"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDthCategory"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDthCategory"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="7" />
+
+                <TextView
+                    android:id="@+id/VlblDthCategory"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Which category does the death apply to?" />
+
+                <Spinner
+                    android:id="@+id/spnDthCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="0"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDthEnrolChamps"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDthEnrolChamps"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="8" />
+
+                <TextView
+                    android:id="@+id/VlblDthEnrolChamps"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Was this death enrolled in the CHAMPS MS study?" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrpDthEnrolChamps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdoDthEnrolChamps1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="No" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthEnrolChamps2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthEnrolChamps3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Dont Know" />
+
+                    <RadioButton
+                        android:id="@+id/rdoDthEnrolChamps4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:text="Refused to Answer" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthEnrolChamps"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:visibility="gone" android:id="@+id/secDthChampsIdKnown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+                <TextView android:id="@+id/lblDthChampsIdKnown" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/VlblDthChampsIdKnown" android:text="Is the MS CHAMPS ID known?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+                <RadioGroup android:id="@+id/rdogrpDthChampsIdKnown" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDthChampsIdKnown1" android:text="No" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDthChampsIdKnown2" android:text="Yes" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDthChampsIdKnown3" android:text="Dont Know" android:paddingLeft="5dp"/>
+                    <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDthChampsIdKnown4" android:text="Refused to Answer" android:paddingLeft="5dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:visibility="gone" android:id="@+id/lineDthChampsIdKnown" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+
+            <LinearLayout
+                android:id="@+id/secDthChampsId"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDthChampsId"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="9" />
+
+                <TextView
+                    android:id="@+id/VlblDthChampsId"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="If yes, what is the MS CHAMPS ID if the death occurred in a child under-five year of age?" />
+
+                <EditText
+                    android:id="@+id/txtDthChampsId"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="200" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthChampsId"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/secDthVDate"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthVDate"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthVDate"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Visit date" />
+
+                <EditText
+                    android:id="@+id/dtpDthVDate"
+                    style="@style/customEdit"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:drawableRight="@drawable/calendersmall"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthVDate"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/secRnd"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblRnd"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblRnd"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Round" />
+
+                <EditText
+                    android:id="@+id/txtRnd"
+                    style="@style/customEdit"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text"
+                    android:maxLength="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineRnd"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDthNote"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lblDthNote"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/VlblDthNote"
+                    android:layout_width="250sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:text="Note" />
+                <!--        <EditText android:id="@+id/txtDthNote" android:maxLength="300" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>-->
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthNote"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/secDthNote1"
+                style="@style/rowStyle0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblDthNote1"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:text="Note" />
+                <!--            <TextView android:id="@+id/VlblDthNote1" android:text="" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>-->
+                <EditText
+                    android:id="@+id/txtDthNote"
+                    style="@style/customEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:inputType="text|textCapWords"
+                    android:maxLength="300" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineDthNote1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20sp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cmdSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/button_style_circle_line"
+                    android:text=" Save -> Continue "
+                    android:textColor="@drawable/button_style_line_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

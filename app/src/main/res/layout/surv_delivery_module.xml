@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="forms_activity.Surv_delivery_module">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/maintoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cmdBack"
+                android:layout_width="50sp"
+                android:layout_height="match_parent"
+                android:background="@color/pageHeadingBack"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lblHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/cmdBack"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="Delivery Outcome Module"
+                android:textColor="@color/pageHeading" />
+
+            <TextView
+                android:id="@+id/lblEvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="42"
+                android:textColor="@color/pageHeading"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maintoolbar"
+        app:layout_constraintVertical_bias="0.069"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/memname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Member Name"
+                    android:textSize="30dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/memdod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Delivery Date: 21/07/2023"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/memtotaloutcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="Total Outcome - 1"
+                    android:textSize="30dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:theme="@style/AppTheme">
+
+                <!--            <androidx.appcompat.widget.Toolbar-->
+                <!--                android:id="@+id/toolbarcustom"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="@dimen/toolbar_height"-->
+                <!--                android:background="@color/colorPrimary"-->
+                <!--                app:popupTheme="@style/AppTheme">-->
+
+                <!--            </androidx.appcompat.widget.Toolbar>-->
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblLiveBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/size_40dp"
+                        android:paddingTop="@dimen/size_15dp"
+                        android:paddingBottom="@dimen/size_15dp"
+                        android:text="Live Birth"
+                        android:textColor="@color/form_heading_font_color"
+                        android:textSize="@dimen/size_50dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/size_16dp"
+                        android:layout_marginTop="@dimen/size_8dp"
+                        android:layout_marginRight="@dimen/size_16dp"
+                        android:layout_marginBottom="@dimen/size_8dp"
+                        android:background="#80939393" />
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/size_30dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lbc1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 1 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lbc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 2 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lbc3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 3 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lbc4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 4 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lbc5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 5 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lbc6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 6 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/lbc7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 7 " />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblMiscarriage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/size_40dp"
+                        android:paddingTop="@dimen/size_15dp"
+                        android:paddingBottom="@dimen/size_15dp"
+                        android:text="Spontaneous Miscarriage/abortions"
+                        android:textColor="@color/form_heading_font_color"
+                        android:textSize="@dimen/size_50dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/size_16dp"
+                        android:layout_marginTop="@dimen/size_8dp"
+                        android:layout_marginRight="@dimen/size_16dp"
+                        android:layout_marginBottom="@dimen/size_8dp"
+                        android:background="#80939393" />
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/size_30dp"
+                        android:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mc1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 1 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 2 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mc3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 3 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mc4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 4 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mc5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 5 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mc6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 6 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/mc7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 7 " />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblStillBirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/size_40dp"
+                        android:paddingTop="@dimen/size_15dp"
+                        android:paddingBottom="@dimen/size_15dp"
+                        android:text="Still Birth"
+                        android:textColor="@color/form_heading_font_color"
+                        android:textSize="@dimen/size_50dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/size_16dp"
+                        android:layout_marginTop="@dimen/size_8dp"
+                        android:layout_marginRight="@dimen/size_16dp"
+                        android:layout_marginBottom="@dimen/size_8dp"
+                        android:background="#80939393" />
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/size_30dp"
+                        android:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sbc1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 1 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sbc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 2 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sbc3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 3 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sbc4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 4 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sbc5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 5 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sbc6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 6 " />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/sbc7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Child 7 " />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/size_16dp"
+                        android:layout_marginTop="@dimen/size_8dp"
+                        android:layout_marginRight="@dimen/size_16dp"
+                        android:layout_marginBottom="@dimen/size_8dp"
+                        android:background="#80939393" />
+
+                    <TextView
+                        android:id="@+id/lblAbortion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/size_40dp"
+                        android:paddingTop="@dimen/size_15dp"
+                        android:paddingBottom="@dimen/size_15dp"
+                        android:text="Induced Abortion"
+                        android:textColor="@color/form_heading_font_color"
+                        android:textSize="@dimen/size_50dp" />
+
+                    <LinearLayout
+                        android:id="@+id/tab4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/size_30dp"
+                        android:visibility="visible">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/abc1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:background="@drawable/style_not_completed_square_shape"
+                            android:text=" Abortion " />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--        <TextView android:id="@+id/lblLiveBirth" android:layout_gravity="center" android:text="Live Birth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" android:textSize="@dimen/size_50dp"  />-->
+            <!--        <LinearLayout-->
+            <!--        android:id="@+id/tab1"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:orientation="vertical">-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 1 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 2 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 3 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 4 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 5 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 6 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 7 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+
+            <!--    </LinearLayout>-->
+
+            <!--        <TextView android:id="@+id/lblMiscarriage" android:layout_gravity="center" android:text="Miscarriage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" android:textSize="@dimen/size_50dp"  />-->
+            <!--        <LinearLayout-->
+            <!--        android:id="@+id/tab2"-->
+            <!--        android:visibility="visible"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:orientation="vertical">-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 1 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 2 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 3 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 4 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 5 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 6 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 7 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+
+            <!--    </LinearLayout>-->
+
+            <!--        <TextView android:id="@+id/lblStillBirth" android:layout_gravity="center" android:text="Still Birth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" android:textSize="@dimen/size_50dp"  />-->
+            <!--        <LinearLayout-->
+            <!--        android:id="@+id/tab3"-->
+            <!--        android:visibility="visible"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:orientation="vertical">-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 1 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 2 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 3 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 4 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 5 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 6 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--        <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--            android:text=" Child 7 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+
+            <!--    </LinearLayout>-->
+
+            <!--        <TextView android:id="@+id/lblAbortion" android:layout_gravity="center" android:text="Abortion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" android:textSize="@dimen/size_50dp"  />-->
+            <!--        <LinearLayout-->
+            <!--            android:id="@+id/tab4"-->
+            <!--            android:visibility="visible"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content">-->
+            <!--            <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"-->
+            <!--                android:text=" Abortion " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+            <!--&lt;!&ndash;                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text=" Child 2 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text=" Child 3 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text=" Child 4 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text=" Child 5 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text=" Child 6 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/not_complete"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text=" Child 7 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>&ndash;&gt;-->
+
+            <!--        </LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

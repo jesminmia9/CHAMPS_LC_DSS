@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/body_margin"
+        android:layout_marginEnd="@dimen/body_margin"
+        android:layout_marginBottom="@dimen/body_margin"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--row 0-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        style="@style/icddrb_menu_linearlayout"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btnClose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorCardViewBackground"
+                            android:src="@drawable/close"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/lblTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="NEWBORN CHARACTERISTICS (B)"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--row 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/NBCare"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="DELIVERY CARE (B1)"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/NBCareDetail"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="DELIVERY CARE DETAIL"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ANC"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="ANTENATAL CARE (B2)"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ANCDetail"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="ANTENATAL CARE VISIT"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <!--row 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/PNCMoth"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="POSTNATAL CARE OF MOTHER (B3)"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/PNCMothDetail"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="POSTNATAL CARE VISITS"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/PNCNB"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="POSTNATAL CARE OF NEWBORN (B4)"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/PNCNBDetail"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="POSTNATAL CARE OF NEWBORN VISITS"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <!--row 3-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/Morbidity"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text=""
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="INFANT MORBIDITY (B5)"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!--<com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_62"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text="62"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Father Serial"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_64"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text="64"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Relation to Head"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_55"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text="55"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Death"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                &lt;!&ndash;row 4&ndash;&gt;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_71"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text="71"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Education"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_72"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text="72"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Occupation"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_12"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text="12"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Member Correction"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>-->
+
+                    <!--<com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_PregHis"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+                            &lt;!&ndash;                            <TextView&ndash;&gt;
+                            &lt;!&ndash;                                style="@style/icddrb_menu_textview"&ndash;&gt;
+                            &lt;!&ndash;                                android:text=""/>&ndash;&gt;
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Pregnancy History"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>-->
+
+                </LinearLayout>
+
+                <!--row 5-->
+                <LinearLayout android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_721"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text="72"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Occupation"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_551"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                style="@style/icddrb_menu_textview"
+                                android:text="55"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Death"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_PregHis1"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+                            <!--                            <TextView-->
+                            <!--                                style="@style/icddrb_menu_textview"-->
+                            <!--                                android:text=""/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Pregnancy History"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/favicon"
+                    android:src="@drawable/favicon"
+                    android:layout_marginEnd="6dp" />
+
+                <TextView
+                    android:id="@+id/lblTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Success"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            </LinearLayout>
+            <!--<TextView android:id="@+id/lblTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Success"
+                android:textStyle="bold"
+                android:textColor="#006699"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />-->
+            <TextView
+                android:id="@+id/lblDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:textIsSelectable="true"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu erat tincidunt lacus fermentum rutrum."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnOk"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                android:textColor="@drawable/button_style_circle_text_color_white"
+                android:background="@drawable/button_style_circle_line_theme_back"
+                android:text="Ok" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:text="Pregnancy &amp; Birth History of Woman of Reproductive Age (&lt;50years)"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:id="@+id/secMemID" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMemID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMemID" android:text="Mother Permanet ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMemID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMemID" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOutSl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOutSl" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOutSl" android:text="Outcome Serial no" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtOutSl" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineOutSl" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHHID" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHHID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHHID" android:text="Household ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtHHID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineHHID" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMSlNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMSlNo" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMSlNo" android:text="Mothers serial no" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMSlNo" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMSlNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secPregNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblPregNo" android:text="B." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblPregNo" android:text="Single/multiple Pregnancy" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpPregNo" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPregNo1" android:text="Single" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPregNo2" android:text="Multiple" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPregNo3" android:text="Dont know" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/linePregNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOutDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOutDate" android:text="C." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOutDate" android:text="On which date did this pregnancy end in a particular month and year?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpOutDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineOutDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secLMP" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblLMP" android:text="D." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblLMP" android:text="What was the date of your last menstrual period of your last pregnancy end (count from the interview date)?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpLMP" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineLMP" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secLMPDk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblLMPDk" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblLMPDk" android:text="What was the date of your last menstrual period of your last pregnancy end (count from the interview date)?  (Date dont know/cant remember) -8" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkLMPDk" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineLMPDk" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secResult" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblResult" android:text="E." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblResult" android:text="Status of pregnancy Outcome" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpResult" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoResult1" android:text="Live birth" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoResult2" android:text="Still Birth" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoResult3" android:text="Abortion/Miscarriage" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineResult" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secCry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblCry" android:text="F." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblCry" android:text="Cry/move/breathe after birth" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpCry" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCry1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoCry2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineCry" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDelMode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDelMode" android:text="M." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDelMode" android:text="Mode of delivery" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpDelMode" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDelMode1" android:text="Normal" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDelMode2" android:text="Cesarean" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDelMode3" android:text="Instrumental delivery such as Forceps/Vacuum/Ventouse delivery " android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDelMode4" android:text="Other" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineDelMode" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDelModeOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDelModeOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDelModeOth" android:text="Mode of delivery - Other" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtDelModeOth" android:maxLength="200" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineDelModeOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblName" android:text="G." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblName" android:text="What name was given to the child? [If no name was given, write XX.]" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtName" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineName" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSex" android:text="H." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSex" android:text="Sex (Was the child a girl or a boy?)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpSex" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex1" android:text="Boy" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex2" android:text="Girl" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex3" android:text="Sex cant be determined" android:paddingLeft="5dp"/>
+<!--           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex4" android:text="" android:paddingLeft="5dp"/>-->
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineSex" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secAlive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblAlive" android:text="I." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblAlive" android:text="Status of the child (alive or dead)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpAlive" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoAlive1" android:text="Dead" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoAlive2" android:text="Alive" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineAlive" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secAgeY" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblAgeY" android:text="J." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblAgeY" android:text="If alive, how old was (names) at his/her last birthday? [Write age in complete years. 
+Write 00 if less than one year old.]" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+         <EditText android:id="@+id/txtAgeY" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineAgeY" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDAgeU" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDAgeU" android:text="K." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDAgeU" android:text="Death Age Unit" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpDAgeU" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDAgeU1" android:text="Days" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDAgeU2" android:text="Months" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoDAgeU3" android:text="Years" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineDAgeU" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDAge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDAge" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDAge" android:text="If dead, how old was when he/she died?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+         <EditText android:id="@+id/txtDAge" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineDAge" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDAgeD" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDAgeD" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDAgeD" android:text="Days" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+         <EditText android:id="@+id/txtDAgeD" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineDAgeD" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOthPreg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOthPreg" android:text="L." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOthPreg" android:text="Were there any pregnancy outcome between this pregnancy and previous pregnancy?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpOthPreg" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoOthPreg1" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoOthPreg2" android:text="Yes" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineOthPreg" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+       <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="horizontal">
+       	<androidx.appcompat.widget.AppCompatButton android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line"
+       			android:text=" Save -> Continue " android:textColor="@drawable/button_style_line_text_color" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+       </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

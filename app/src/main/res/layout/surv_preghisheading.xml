@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbars="vertical">
+    <LinearLayout android:id="@+id/secListRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:background="#C2E0EC" android:paddingTop="5px" android:paddingBottom="5px">
+<!--        <TextView android:text="ObsMatID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+        <TextView android:text="MemberID" android:layout_width="150dp" android:gravity="center" android:layout_height="wrap_content"/>
+<!--        <TextView android:text="HHID" android:layout_width="150dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+        <TextView android:text="MSlNo" android:layout_width="60dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="Visit Date" android:layout_width="150dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="Visit Status" android:layout_width="100dp" android:gravity="center" android:layout_height="wrap_content"/>
+<!--        <TextView android:text="ObsVStatusOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="MarMon" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="MarYear" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="MarDK" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="EverPreg" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="TotPreg" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="GaveBirth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ChildLivWWo" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="SonLivWWo" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="DaugLivWWo" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ChldLivOut" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="SonLivOut" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="DaugLivOut" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="EarlyAlive" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="EarlyAliveNo" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ChldDie" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="BoyDied" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="GirlDied" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ChDiedFsMon" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="NotLivBrth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="TotNotLB" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="StillBirth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="StillBirthDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="MiscAbor" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="MiscAborDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="LastPregRes" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="LastOutDate" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="LastOutDateDK" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="Cesarean" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="CesareanNo" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="TotPregOut" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ObsNote" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+ </LinearLayout>

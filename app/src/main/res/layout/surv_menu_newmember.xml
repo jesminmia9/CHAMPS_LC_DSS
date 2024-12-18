@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:layout_margin="10dp"
+    android:background="@drawable/dialog_bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/body_margin"
+        android:layout_marginEnd="@dimen/body_margin"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--row 0-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        style="@style/icddrb_menu_linearlayout"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btnClose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorCardViewBackground"
+                            android:src="@drawable/close"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text="New Member"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--row 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_20" android:layout_margin="5dp"
+                        style="@style/icddrb_menu_cardView"
+                        android:visibility="visible"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView android:visibility="gone"
+                                style="@style/icddrb_menu_textview"
+                                android:text="20" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Baseline Registration"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_21" android:layout_margin="5dp"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView android:visibility="gone"
+                                style="@style/icddrb_menu_textview"
+                                android:text="21" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Migration-In"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_22" android:layout_margin="5dp"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView android:visibility="gone"
+                                style="@style/icddrb_menu_textview"
+                                android:text="22" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Internal Migration-In"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+
+                <!--row 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_80"
+                        android:layout_margin="5dp"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView android:visibility="gone"
+                                style="@style/icddrb_menu_textview"
+                                android:text="20" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Temp. Migration-In"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_2111" android:layout_margin="5dp"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView android:visibility="gone"
+                                style="@style/icddrb_menu_textview"
+                                android:text="21" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Migration-In"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/ev_22222" android:layout_margin="5dp"
+                        style="@style/icddrb_menu_cardView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            style="@style/icddrb_menu_linearlayout"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView android:visibility="gone"
+                                style="@style/icddrb_menu_textview"
+                                android:text="22" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minLines="2"
+                                android:padding="5dp"
+                                android:text="Internal Migration-In"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</LinearLayout>

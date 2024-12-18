@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="forms_activity.Surv_delivery_module">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/maintoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:layout_toRightOf="@+id/cmdBack" android:text="Delivery Outcome Module"  android:paddingLeft="10sp" android:layout_width="wrap_content" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/lblEvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="42"
+                android:textColor="@color/pageHeading"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maintoolbar"
+        app:layout_constraintVertical_bias="0.069"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/memname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Member Name"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/memdod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Delivery Date: 21/07/2023"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/memtotaloutcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Total Outcome - 1"
+                android:textSize="40dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:theme="@style/AppTheme">
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbarcustom"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/toolbar_height"-->
+<!--                android:background="@color/colorPrimary"-->
+<!--                app:popupTheme="@style/AppTheme">-->
+
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/back_tabs">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/select"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_select"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/item1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Live Birth"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/item2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Miscarriage"
+                            android:textSize="15dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/item3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Still Birth"
+                            android:textSize="15dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/item4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Abortion"
+                            android:textSize="15dp"></TextView>
+                    </LinearLayout>
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                android:text=" Child 1 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                android:text=" Child 2 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                android:text=" Child 3 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                android:text=" Child 4 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                android:text=" Child 5 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                android:text=" Child 6 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/lbc7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                android:text=" Child 7 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 1 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 2 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 3 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 4 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 5 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 6 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/mc7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 7 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tab3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 1 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 2 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 3 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 4 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 5 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 6 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/sbc7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Child 7 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tab4"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc1" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"
+                    android:text=" Abortion " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+<!--                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc2" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"-->
+<!--                    android:text=" Child 2 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+<!--                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc3" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"-->
+<!--                    android:text=" Child 3 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+<!--                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc4" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"-->
+<!--                    android:text=" Child 4 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+<!--                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc5" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"-->
+<!--                    android:text=" Child 5 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+<!--                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc6" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"-->
+<!--                    android:text=" Child 6 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+<!--                <androidx.appcompat.widget.AppCompatButton android:id="@+id/abc7" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line_lightgray"-->
+<!--                    android:text=" Child 7 " android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>-->
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

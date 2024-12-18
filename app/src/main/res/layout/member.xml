@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:text="Member Registration"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:id="@+id/seclbl02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/Vlbllbl02" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlbl02" android:text="Member Registration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelbl02" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclbl01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/Vlbllbl01" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlbl01" android:text="INTERVIEWER: I would like to speak with the head of household or another adult household member. First, please allow me to ask you about the individuals in your household. Starting with the head of household, please give me the name, sex, and relationship with the head of household of each individual in your household.\nFIRST LIST THE NAME (ASSIGNING AN ID#), RELATIONSHIP WITH HOUSEHOLD HEAD, AND SEX FOR EACH PERSON IN THE HOUSEHOLD, THEN COMPLETE THE ADDITIONAL ROSTER COLUMNS. ADD ADDITIONAL HOUSEHOLD MEMBER LINES TO THE ROSTER AS NEEDED.\nINTERVIEWER: Just to make sure that I have a complete listing: are there any other people such as small children or infants born in the past year that we have not listed?" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelbl01" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMemID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMemID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMemID" android:text="Internal Member ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMemID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMemID" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHHID" android:visibility="gone"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHHID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHHID" android:text="Household ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtHHID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineHHID" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secDSSID" android:visibility="gone"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblDSSID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblDSSID" android:text="Member Permanent ID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtDSSID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineDSSID"  android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMSlNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMSlNo" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMSlNo" android:text="Member Serial Number" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMSlNo" android:maxLength="2" android:layout_width="60sp" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMSlNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblName" android:text="1." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblName" android:text="Member Name" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtName" android:maxLength="50" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineName" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRth" android:text="2." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRth" android:text="What is relationship with HH head" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnRth" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineRth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRthOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRthOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRthOth" android:text="Other relation Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtRthOth" android:maxLength="300" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineRthOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSex" android:text="3." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSex" android:text="Sex" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpSex" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex1" android:text="Male" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex2" android:text="Female" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex3" android:text="Indeterminant" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex4" android:text="Transgender" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoSex5" android:text="Unknown" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineSex" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secBDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblBDate" android:text="4." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblBDate" android:text="Date of Birth" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpBDate" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineBDate" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secBDateType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblBDateType" android:text="5." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblBDateType" android:text="Date of Birth Type" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpBDateType" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBDateType1" android:text="Exact" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoBDateType2" android:text="Approximate" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineBDateType" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secAgeY" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblAgeY" android:text="6." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblAgeY" android:text="What is age in completed years" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtAgeY" android:maxLength="3" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineAgeY" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMoNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMoNo" android:text="7." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMoNo" android:text="Mothers ID (IF MOTHER IS A HOUSEHOLD MEMBER)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnMoNo" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMoNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMoName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMoName" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMoName" android:text="Mother Name" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMoName" android:maxLength="200" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMoName" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secFaNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblFaNo" android:text="8." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblFaNo" android:text="Fathers ID (IF FATHER IS A HOUSEHOLD MEMBER)" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnFaNo" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineFaNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secFaName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblFaName" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblFaName" android:text="Father Name" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtFaName" android:maxLength="200" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineFaName" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secEduY" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblEduY" android:text="9." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblEduY" android:text="How many years of education has completed?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtEduY" android:maxLength="2" android:layout_width="60sp" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineEduY" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMS" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMS" android:text="10." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMS" android:text="What is marital status" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpMS" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS1" android:text="Single/never married" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS2" android:text="Married" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS3" android:text="Married (polygamous)" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS4" android:text="Regular partner" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS5" android:text="Divorced" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS6" android:text="Separated" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS7" android:text="Widow/widower" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS8" android:text="Other" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS9" android:text="Dont know" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoMS10" android:text="Refused to respond" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineMS" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMSOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMSOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMSOth" android:text="Other Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMSOth" android:maxLength="200" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMSOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secEmploy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblEmploy" android:text="11." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblEmploy" android:text="What is employment status" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpEmploy" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy1" android:text="Professional/Technical/Managerial" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy2" android:text="Business Owners, Merchants, Traders, Vendors" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy3" android:text="Manual Skilled" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy4" android:text="Manual Unskilled" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy5" android:text="Domestic/Caregiver/Housewife" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy6" android:text="Unemployed" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy7" android:text="Other" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy8" android:text="Dont know" android:paddingLeft="5dp"/>
+            <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoEmploy9" android:text="Refused to respond" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineEmploy" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secEmployOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblEmployOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblEmployOth" android:text="Other Employment status specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtEmployOth" android:maxLength="100" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineEmployOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOcp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOcp" android:text="12." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOcp" android:text="What is primary income generating activity (main occupation) at this time?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnOcp" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineOcp" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secOcpOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblOcpOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblOcpOth" android:text="Other Occupation Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtOcpOth" android:maxLength="100" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineOcpOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secReligion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblReligion" android:text="13." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblReligion" android:text="Religion" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnReligion" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineReligion" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secReligionOth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblReligionOth" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblReligionOth" android:text="Other Religion Specify" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtReligionOth" android:maxLength="100" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineReligionOth" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+        <LinearLayout android:id="@+id/secEthnicity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+            <TextView android:id="@+id/lblEthnicity" android:text="14." android:layout_width="40sp" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/VlblEthnicity" android:text="Ethnicity" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+            <Spinner android:id="@+id/spnEthnicity" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+        </LinearLayout>
+        <View android:id="@+id/lineEthnicity" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />    <LinearLayout android:id="@+id/secMobileNo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMobileNo" android:text="15." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMobileNo" android:text="Mobile No" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMobileNo" android:maxLength="20" android:layout_width="match_parent" android:inputType="number" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMobileNo" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+        <LinearLayout android:id="@+id/seclblSpsl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:id="@+id/lblHlblSpsl" android:text="Spouse's Serial No" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" style="@style/rowHeading"/>
+        </LinearLayout>
+        <View android:id="@+id/linelblSpsl" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+
+    <LinearLayout android:id="@+id/secSp1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSp1" android:text="16." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSp1" android:text="Spouse Serial No 1" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnSp1" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSp1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSp1Name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSp1Name" android:text="15a." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSp1Name" android:text="Spouse Name" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtSp1Name" android:maxLength="200" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSp1Name" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSp2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSp2" android:text="17." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSp2" android:text="Spouse Serial No 2" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnSp2" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSp2" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSp2Name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSp2Name" android:text="17a." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSp2Name" android:text="Spouse Name" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtSp2Name" android:maxLength="200" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSp2Name" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSp3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSp3" android:text="18." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSp3" android:text="Spouse Serial No 3" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnSp3" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSp3" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSp3Name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSp3Name" android:text="18a." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSp3Name" android:text="Spouse Name" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtSp3Name" android:maxLength="200" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSp3Name" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSp4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSp4" android:text="19." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSp4" android:text="Spouse Serial No 4" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnSp4" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSp4" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secSp4Name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblSp4Name" android:text="19a." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblSp4Name" android:text="Spouse Name" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtSp4Name" android:maxLength="200" android:layout_width="match_parent" android:inputType="text|textCapWords" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineSp4Name" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secPstat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblPstat" android:text="20." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblPstat" android:text="Pregnancy Status" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpPstat" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPstat1" android:text="Not Pregnant" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPstat2" android:text="Currently Pregnant" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoPstat3" android:text="Wonam Absent" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/linePstat" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secLmpDt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblLmpDt" android:text="21." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblLmpDt" android:text="LMP Date" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/dtpLmpDt" android:drawableRight="@drawable/calendersmall" android:layout_width="150sp" android:inputType="text" android:layout_height="wrap_content" android:focusable="false" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineLmpDt" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secRnd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblRnd" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblRnd" android:text="Round" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtRnd" android:maxLength="2" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineRnd" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secActive" android:visibility="gone"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblActive" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblActive" android:text="Member active" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtActive" android:maxLength="1" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineActive" android:visibility="gone"  android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+       <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="horizontal">
+       	<androidx.appcompat.widget.AppCompatButton android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line"
+       			android:text=" Save -> Continue " android:textColor="@drawable/button_style_line_text_color" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+       </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

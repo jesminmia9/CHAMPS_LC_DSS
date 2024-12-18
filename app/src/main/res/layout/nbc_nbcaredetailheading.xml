@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbars="vertical">
+    <LinearLayout android:id="@+id/secListRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:background="#C2E0EC" android:paddingTop="5px" android:paddingBottom="5px">
+        <TextView android:text="NBID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MemID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="HHID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PGN" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PregType" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="OutcomeDate" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="OutcomeDateDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="OutcomeTime" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="OutcomeTimeDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="OutcomeType" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="CryMoveBreathe" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChildName" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChildNameDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChildID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChildSex" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="BirthTiming" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PregWeek" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PregWeekDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ExpDOB" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ExpDOBDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChildDOB" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChildDOBDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="BPlace" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="BPlaceOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="FaciName" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="FaciNameDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndDoc" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndNurse" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndMidwife" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndTBA" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndCHW" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndRel" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndNon" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndOthSp" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndDK" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DelAtndRef" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="BabySize" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WgtMsrd" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WgtMsrdUnt" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WgtPound" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WgtGm" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WgtDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WgtDtSrc" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="BFStatus" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="BFTime" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="BFTimeDur" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="BFTimeOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="NBRthHead" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="NBRthHeadOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+    </LinearLayout>
+ </LinearLayout>

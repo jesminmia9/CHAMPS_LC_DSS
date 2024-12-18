@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbars="vertical">
+    <LinearLayout android:id="@+id/secListRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:background="#C2E0EC" android:paddingTop="5px" android:paddingBottom="5px">
+        <TextView android:text="MorbiID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MemID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="HHID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PGN" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChSl" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ChDiarrhea" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DiarrheaTreat" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DiarrheaTreatPlace" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DiarrheaTreatPlaceOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="Cough2W" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="FastBrth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="FastBrthCause" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="SeekHCare" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="SeekHCarePlace" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="SeekHCarePlaceOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="Fever2W" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="FeverTreat" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="FeverTreatPlace" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="FeverTreatPlaceOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="WeightLost" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PoorWeight" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="FeedLP2Week" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="UnderweightAge" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="OverweightAge" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="ComMEBaby" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+    </LinearLayout>
+ </LinearLayout>

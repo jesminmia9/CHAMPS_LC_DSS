@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/form_background_color">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <ImageButton android:id="@+id/cmdBack" android:background="@color/pageHeadingBack" android:src="@drawable/back" android:layout_width="50sp" android:layout_height="match_parent"/>
+            <TextView android:id="@+id/lblHeading" android:text="SECTION 1: KNOWLEDGE OF MODERN METHODS"  android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="@color/pageHeading"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <LinearLayout android:layout_marginLeft="10dp" android:layout_marginRight="10dp"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:id="@+id/secuuid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lbluuid" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/Vlbluuid" android:text="UUID" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtuuid" android:maxLength="50" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineuuid" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secMemID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblMemID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblMemID" android:text="Member ID Number" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtMemID" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineMemID" android:visibility="gone" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secHHID" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblHHID" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblHHID" android:text="Household ID
+" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <EditText android:id="@+id/txtHHID" android:visibility="gone" android:maxLength="40" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineHHID" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclbl1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/Vlbllbl1" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlbl1" android:text="SECTION 1: KNOWLEDGE OF MODERN METHODS OF DELAYING OR POST PONDING PREGNANCY" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelbl1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q1" android:text="1." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q1" android:text="Do you know any modern methods of delaying or post ponding pregnancy?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpS1Q1" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS1Q11" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS1Q12" android:text="No" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblq1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/Vlbllblq1" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblq1" android:text="If Yes, Please List The Modern Methods Of Contraception You Know. Do Not Read Out. If More Than One Method Is Mentioned, Select All That Apply. If No skip to Section 2, question 4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblq1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q11" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q11" android:text="1) Condoms" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q11" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q11" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q12" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q12" android:text="2) Birth control pills" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q12" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q12" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q13" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q13" android:text="3) Intrauterine device (IUD)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q13" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q13" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q14" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q14" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q14" android:text="4) Injectable contraceptives" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q14" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q14" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q15" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q15" android:text="5) Implant" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q15" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q15" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q16" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q16" android:text="6) Sterilization (vasectomy/tubal ligation)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q16" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q16" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q17" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q17" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q17" android:text="7) Others" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q17" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q17" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q17_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q17_1" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q17_1" android:text="Others Method" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtS1Q17_1" android:ems="10" android:drawableRight="@drawable/close" android:drawableTint="@color/theme_color" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q17_1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlblS1Q2" android:text="2." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHS1Q2" android:text="How do you know about the modern methods of delaying or post ponding pregnancy? (select all that apply)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q2" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q21" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q21" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q21" android:text="1) Healthcare provider" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q21" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q21" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q22" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q22" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q22" android:text="2) Media(TV, Radio, Internet)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q22" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q22" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q23" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q23" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q23" android:text="3) Family/friends" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q23" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q23" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q24" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q24" android:text="4) Community health worker" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q24" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q24" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q25" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q25" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q25" android:text="5) Nongovernmental organization" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q25" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q25" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q26" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q26" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q26" android:text="6) Religious gathering" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q26" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q26" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q27" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q27" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q27" android:text="7) Village/community groups" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q27" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q27" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q28" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q28" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q28" android:text="8) Others" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q28" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q28" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q28_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q28_1" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q28_1" android:text="Others" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtS1Q28_1" android:ems="10" android:drawableRight="@drawable/close" android:drawableTint="@color/theme_color" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q28_1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q3" android:text="3." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q3" android:text="Do you know any side effect of these modern methods of delaying or post ponding pregnancy?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpS1Q3" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS1Q31" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS1Q32" android:text="No" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q3" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblq31" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/Vlbllblq31" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblq31" android:text="If yes, please list the side effect you know (select all that apply)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblq31" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q31" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q31" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q31" android:text="1) Irregular bleeding" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q31" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q31" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q32" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q32" android:text="2) Infertility" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q32" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q32" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q33" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q33" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q33" android:text="3) Abdominal pain" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q33" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q33" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q34" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q34" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q34" android:text="4) Weight gain" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q34" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q34" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q35" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q35" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q35" android:text="5) Weight loss" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q35" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q35" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q36" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q36" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q36" android:text="6) Change in sexual desire" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q36" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q36" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q37" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q37" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q37" android:text="7) Increase hair in the face/body" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q37" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q37" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q38" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q38" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q38" android:text="8) Hair loss" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q38" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q38" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q39" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q39" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q39" android:text="9) Headache" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q39" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q39" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q310" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q310" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q310" android:text="10) Breast tenderness" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q310" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q310" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q311" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q311" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q311" android:text="11) Others (please specify)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS1Q311" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q311" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS1Q311_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS1Q311_1" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS1Q311_1" android:text="Others" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtS1Q311_1" android:ems="10" android:drawableRight="@drawable/close" android:drawableTint="@color/theme_color" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineS1Q311_1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclbls2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/Vlbllbls2" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlbls2" android:text="SECTION 2: ATTITUDE TOWARDS DELAYING OR POST PONDING PREGNANCY" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelbls2" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q4" android:text="4." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q4" android:text="Do you use or intend to use any modern method of delaying or post ponding pregnancy?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpS2Q4" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q41" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q42" android:text="No" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q4" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ5" android:text="5." android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ5" android:text="What are your reasons for using modern methods of delaying or post ponding pregnancy?.(select all that apply)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ5" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q51" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q51" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q51" android:text="1) Delaying pregnancy" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q51" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q51" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q52" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q52" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q52" android:text="2) Child spacing" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q52" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q52" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q53" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q53" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q53" android:text="3) Financial reason" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q53" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q53" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q54" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q54" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q54" android:text="4) Health reason" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q54" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q54" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q55" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q55" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q55" android:text="5) Husband choice" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q55" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q55" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q6" android:text="6." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q6" android:text="How important do you think is of delaying or post ponding pregnancy for married couple?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpS2Q6" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q61" android:text="Very important" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q62" android:text="Somewhat important" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q63" android:text="Not important" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q64" android:text="Unsure" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q6" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q7" android:text="7." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q7" android:text="How effective do you think modern methods are in delaying or post ponding pregnancy?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpS2Q7" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q71" android:text="Very effective" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q72" android:text="Somewhat effective" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q73" android:text="Not very effective" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS2Q74" android:text="Not sure" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q7" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ8" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ8" android:text="What is your main concern/fears (if any) about using modern methods of delaying or post ponding pregnancy? (select all that apply)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ8" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q81" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q81" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q81" android:text="1) Cultural belief" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q81" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q81" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q82" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q82" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q82" android:text="2) Religious belief" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q82" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q82" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q83" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q83" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q83" android:text="3) Bad past experience" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q83" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q83" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q84" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q84" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q84" android:text="4) Others( please specify)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS2Q84" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q84" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS2Q84_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS2Q84_1" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS2Q84_1" android:text="Others" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtS2Q84_1" android:ems="10" android:drawableRight="@drawable/close" android:drawableTint="@color/theme_color" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineS2Q84_1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclbls3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/Vlbllbls3" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlbls3" android:text="SECTION 3: PRACTICE OF DELAYING OR POST PONDING PREGNANCY" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelbls3" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q9" android:text="9." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q9" android:text="Are you currently using a modern method of delaying or post ponding pregnancy?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpS3Q9" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS3Q91" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS3Q92" android:text="No" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q9" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblQ9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblQ9" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblQ9" android:text="If yes, which method are you using? (Select all that specify)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblQ9" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q91" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q91" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q91" android:text="1)  Condom" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q91" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q91" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q92" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q92" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q92" android:text="2) Birth control pills" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q92" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q92" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q93" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q93" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q93" android:text="3) Intrauterine device (IUD)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q93" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q93" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q94" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q94" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q94" android:text="4) Injectable" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q94" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q94" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q95" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q95" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q95" android:text="5) Implant" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q95" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q95" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q96" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q96" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q96" android:text="6) Sterilization (vasectomy/ tubal ligation)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q96" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q96" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclbl97" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/Vlbllbl97" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlbl97" android:text="If no, what is the reason for not using? ( select all that apply)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelbl97" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q97" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q97" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q97" android:text="1) Currently pregnant" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q97" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q97" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q98" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q98" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q98" android:text="2) Cultural/Religious beliefs" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q98" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q98" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q99" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q99" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q99" android:text="3) Fear of side effect" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q99" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q99" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q910" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q910" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q910" android:text="4) Lack of information" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q910" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q910" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q911" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q911" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q911" android:text="5) Husband does not approve" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q911" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q911" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q912" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q912" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q912" android:text="6) Bad past experience" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q912" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q912" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q913" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q913" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q913" android:text="7) Refuse to respond" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q913" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q913" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q914" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q914" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q914" android:text="8) Others (please specify)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q914" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q914" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q914_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q914_1" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q914_1" android:text="Others" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtS3Q914_1" android:ems="10" android:drawableRight="@drawable/close" android:drawableTint="@color/theme_color" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q914_1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q10" android:text="10." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q10" android:text="Who between you and your husband typically makes decisions about of delaying or post ponding pregnancy?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <Spinner android:id="@+id/spnS3Q10" android:drawSelectorOnTop="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_marginRight="10sp"/>
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q10" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q10_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q10_1" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q10_1" android:text="Others" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtS3Q10_1" android:ems="10" android:drawableRight="@drawable/close" android:drawableTint="@color/theme_color" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q10_1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q11" android:text="11." android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q11" android:text="Do you plan to use a modern method of delaying or post ponding pregnancy in the future?" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <RadioGroup android:id="@+id/rdogrpS3Q11" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">         
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS3Q111" android:text="Yes" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS3Q112" android:text="No" android:paddingLeft="5dp"/>
+           <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingRight="10dp" android:id="@+id/rdoS3Q113" android:text="Not sure" android:paddingLeft="5dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q11" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/seclblS3Q11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowHeading">
+        <TextView android:id="@+id/VlbllblS3Q11" android:text="" android:visibility="gone" android:layout_width="40sp" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color" />
+        <TextView android:id="@+id/lblHlblS3Q11" android:text="If yes, which method are you considering? (Select all that apply)" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/form_heading_font_color"  />
+    </LinearLayout>
+    <View android:id="@+id/linelblS3Q11" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q111" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q111" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q111" android:text="1) Condom" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q111" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q111" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q112" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q112" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q112" android:text="2) Birth control pills" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q112" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q112" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q113" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q113" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q113" android:text="3) Implant" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q113" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q113" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q114" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q114" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q114" android:text="4) Intrauterine device (IUD)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q114" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q114" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q115" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q115" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q115" android:text="5) Injectable" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q115" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q115" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q116" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q116" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q116" android:text="6) Sterilization" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q116" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q116" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q117" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q117" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q117" android:text="7) Others (please specify)" android:layout_width="250sp" android:layout_height="wrap_content" android:layout_marginBottom="10sp"/>
+        <CheckBox android:id="@+id/chkS3Q117" android:layout_width="50sp" android:inputType="text" android:layout_height="wrap_content" android:layout_marginRight="10sp" />
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q117" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+    <LinearLayout android:id="@+id/secS3Q117_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" style="@style/rowStyle0">
+        <TextView android:id="@+id/lblS3Q117_1" android:text="" android:layout_width="40sp" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/VlblS3Q117_1" android:text="Others" android:layout_width="250sp" android:layout_height="wrap_content"  android:layout_marginBottom="10sp"/>
+        <AutoCompleteTextView android:id="@+id/txtS3Q117_1" android:ems="10" android:drawableRight="@drawable/close" android:drawableTint="@color/theme_color" android:maxLength="100" android:layout_width="match_parent" android:inputType="text" android:layout_height="wrap_content" style="@style/customEdit" android:layout_marginRight="10sp" android:maxLines="1" android:completionThreshold="1" android:scrollHorizontally="true" android:dropDownSelector="#D7D7D7"/>
+    </LinearLayout>
+    <View android:id="@+id/lineS3Q117_1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#CCCCCC" />
+       <LinearLayout android:layout_width="fill_parent" android:paddingTop="20sp" android:layout_height="wrap_content" android:orientation="horizontal">
+       	<androidx.appcompat.widget.AppCompatButton android:id="@+id/cmdSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/button_style_circle_line"
+       			android:text=" Save -> Continue " android:textColor="@drawable/button_style_line_text_color" android:layout_marginBottom="20sp" android:layout_marginLeft="20sp" android:layout_marginRight="20sp"/>
+       </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

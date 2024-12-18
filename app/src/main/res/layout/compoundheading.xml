@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbars="vertical">
+    <LinearLayout android:id="@+id/secListRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal"  android:background="#C2E0EC" android:paddingTop="5px" android:paddingBottom="5px">
+<!--        <TextView android:text="CompoundID" android:layout_width="150dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+        <TextView android:text="Compound Code" android:layout_width="150dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="Compound Name" android:layout_width="150dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="Address" android:layout_width="150dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="Village" android:layout_width="150dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="TotalHH" android:layout_width="100dp" android:gravity="center" android:layout_height="wrap_content"/>
+<!--        <TextView android:text="Active" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ComEnDate" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ComExDate" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ComExReason" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="Cluster" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="Block" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="Rnd" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+ </LinearLayout>

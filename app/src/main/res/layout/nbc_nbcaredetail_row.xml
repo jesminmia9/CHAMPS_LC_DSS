@@ -1,0 +1,369 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:tools = "http://schemas.android.com/tools"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        android:id = "@+id/secListRow" android:layout_width = "match_parent" android:layout_height = "wrap_content" android:orientation = "vertical">
+    <androidx.cardview.widget.CardView
+        android:id = "@+id/card_view"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_gravity = "center"
+        app:cardCornerRadius = "5dp"
+        android:layout_marginStart = "10dp"
+        android:layout_marginEnd = "10dp"
+        android:layout_marginTop = "2dp"
+        android:layout_marginBottom = "10dp"
+        app:cardElevation = "2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:id="@+id/leftSection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="0sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/blue"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Child Sl"/>
+
+                    <TextView
+                        android:id="@+id/ChSl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10sp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secRight"
+                    android:layout_width="125sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/leftSection"
+                    android:orientation="vertical"
+                    android:paddingTop="0sp"
+                    android:paddingBottom="2sp">
+
+                    <TextView
+                        android:layout_width="60sp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:gravity="left"
+                        android:text="Name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:gravity="left"
+                        android:text="Outcome Type"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:gravity="left"
+                        android:text="Outcome Date"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:gravity="left"
+                        android:text="ID"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/secMiddle"
+                    android:layout_width="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/secRight"
+                    android:orientation="vertical"
+                    android:paddingTop="0sp"
+                    android:paddingBottom="2sp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginBottom="1sp"
+                        android:text=":"
+                        android:gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:text=":"
+                        android:gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:text=":"
+                        android:gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginBottom="1sp"
+                        android:text=":"
+                        android:gravity="left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secRight1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/secMiddle"
+                    android:orientation="vertical"
+                    android:paddingTop="0sp"
+                    android:paddingBottom="2sp">
+
+                    <TextView
+                        android:id="@+id/ChildName"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:gravity="left" />
+
+                    <TextView
+                        android:id="@+id/PregType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:gravity="left" />
+
+                    <TextView
+                        android:id="@+id/ChildDOB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:gravity="left" />
+
+                    <TextView
+                        android:id="@+id/ChildID"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1sp"
+                        android:gravity="left" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_next"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_action_next_item"
+                    app:tint="@color/colorPrimaryLight" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/secModules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/secleft1"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:clickable="false"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPNCChMaster"
+                    android:visibility="visible"
+                    android:layout_width="0sp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_not_done_square_shape"
+                    android:text="PNC of Newborn"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnMorbidityCh"
+                    android:visibility="visible"
+                    android:layout_width="0sp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_not_done_square_shape"
+                    android:text="Infant Morbidity"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPNCCh1"
+                    android:visibility="gone"
+                    android:layout_width="0sp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_not_done"
+                    android:text="PNC 1"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPNCCh2"
+                    android:visibility="gone"
+                    android:layout_width="0sp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_not_done"
+                    android:text="PNC 2"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPNCCh3"
+                    android:visibility="gone"
+                    android:layout_width="0sp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_not_done"
+                    android:text="PNC 3"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPNCCh4"
+                    android:visibility="gone"
+                    android:layout_width="0sp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_not_done"
+                    android:text="PNC 4"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+<!--        <RelativeLayout -->
+<!--            android:layout_width="match_parent" -->
+<!--            android:layout_height="wrap_content" -->
+<!--            android:orientation="horizontal">-->
+<!--        <LinearLayout android:padding="10dp" -->
+<!--            android:background="?android:selectableItemBackground" -->
+<!--            android:layout_width = "match_parent" -->
+<!--            android:layout_height = "wrap_content" -->
+<!--            android:orientation = "horizontal">-->
+<!--        <TextView android:id="@+id/NBID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/MemID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/HHID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/PGN" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/PregType" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/OutcomeDate" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/OutcomeDateDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/OutcomeTime" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/OutcomeTimeDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/OutcomeType" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/CryMoveBreathe" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/ChildName" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/ChildNameDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/ChildID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/ChildSex" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/BirthTiming" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/PregWeek" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/PregWeekDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/ExpDOB" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/ExpDOBDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/ChildDOB" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/ChildDOBDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/BPlace" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/BPlaceOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/FaciName" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/FaciNameDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndDoc" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndNurse" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndMidwife" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndTBA" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndCHW" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndRel" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndNon" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndOthSp" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndDK" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/DelAtndRef" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/BabySize" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/WgtMsrd" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/WgtMsrdUnt" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/WgtPound" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/WgtGm" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/WgtDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/WgtDtSrc" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/BFStatus" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/BFTime" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/BFTimeDur" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/BFTimeOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/NBRthHead" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:id="@+id/NBRthHeadOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--       </LinearLayout>-->
+<!--       <ImageView android:id="@+id/iv_next" android:layout_marginTop="5dp"-->
+<!--           android:layout_alignParentEnd="true" android:layout_width="25dp"  android:layout_height="25dp" android:layout_gravity="center_vertical" android:layout_marginStart="4dp"-->
+<!--           app:srcCompat="@drawable/ic_action_next_item"  app:tint="@color/colorPrimaryLight" />-->
+<!--       </RelativeLayout>-->
+    </androidx.cardview.widget.CardView>
+ </LinearLayout>

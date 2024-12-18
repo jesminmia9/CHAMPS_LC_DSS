@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollbars="vertical">
+    <LinearLayout android:id="@+id/secListRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="5px" android:paddingBottom="5px">
+<!--        <TextView android:text="VaccID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="HHID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="MoSlNo" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="MemID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="Vaccine Code" android:layout_width="200dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+        <TextView android:text="Vaccine" android:textSize="25dp" android:layout_width="match_parent" android:gravity="center" android:layout_height="wrap_content"/>
+<!--        <TextView android:text="VaccCodeOth2" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="Response" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="ResponseOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="VaccDate" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+<!--        <TextView android:text="VaccDateDK" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+ </LinearLayout>

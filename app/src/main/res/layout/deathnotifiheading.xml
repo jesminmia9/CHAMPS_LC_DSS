@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/secListRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C2E0EC"
+        android:orientation="horizontal"
+        android:paddingTop="5px"
+        android:paddingBottom="5px"
+        android:weightSum="7"
+        android:paddingEnd="24dp">
+        <!--<TextView android:text="DthID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="HHID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MortalityAgeG" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginStart="20dp"
+            android:text="Deceased Name" />
+        <!-- <TextView android:text="MemID" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+ -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="DOD" />
+        <!--<TextView android:text="DODDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="DOB" />
+        <!--<TextView android:text="DOBDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DAgeDay" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DAgeM" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DAgeY" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="DAgeYDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="POD" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PODOth" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PODNm" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="PODNmDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="CODToldHCP" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MainCOD" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MainCODDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MainCODThink" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+        <TextView android:text="MainCODThinkDk" android:layout_width="50dp" android:gravity="center" android:layout_height="wrap_content"/>
+-->
+    </LinearLayout>
+</LinearLayout>
